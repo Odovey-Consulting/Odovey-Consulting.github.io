@@ -1,6 +1,5 @@
-import Link from 'next/link'
-import { Calendar, Clock, ArrowRight } from 'lucide-react'
 import { getAllPosts } from '@/lib/blog'
+import BlogPostGrid from '@/components/BlogPostGrid'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -14,6 +13,7 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllPosts()
+  const allTags = Array.from(new Set(posts.flatMap((post) => post.tags))).sort()
 
   return (
     <div className="bg-white">
@@ -41,62 +41,7 @@ export default function BlogPage() {
               <p className="text-xl text-gray-500">No posts yet. Check back soon.</p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {posts.map((post) => (
-                <article
-                  key={post.slug}
-                  className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition-shadow duration-200"
-                >
-                  <div className="p-6">
-                    {/* Tags */}
-                    <div className="flex flex-wrap gap-2 mb-3">
-                      {post.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="inline-block bg-primary-50 text-primary-700 text-xs font-medium px-2.5 py-0.5 rounded-full"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-
-                    {/* Title */}
-                    <h2 className="text-xl font-bold text-gray-900 mb-2">
-                      <Link href={`/blog/${post.slug}`} className="hover:text-primary-600 transition-colors">
-                        {post.title}
-                      </Link>
-                    </h2>
-
-                    {/* Excerpt */}
-                    <p className="text-gray-600 mb-4 line-clamp-3">{post.excerpt}</p>
-
-                    {/* Meta */}
-                    <div className="flex items-center text-sm text-gray-500 mb-4">
-                      <Calendar className="h-4 w-4 mr-1.5" />
-                      <time dateTime={post.date}>
-                        {new Date(post.date).toLocaleDateString('en-US', {
-                          year: 'numeric',
-                          month: 'long',
-                          day: 'numeric',
-                        })}
-                      </time>
-                      <span className="mx-2">·</span>
-                      <Clock className="h-4 w-4 mr-1.5" />
-                      <span>{post.readingTime} min read</span>
-                    </div>
-
-                    {/* Read More */}
-                    <Link
-                      href={`/blog/${post.slug}`}
-                      className="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors"
-                    >
-                      Read More
-                      <ArrowRight className="h-4 w-4 ml-1" />
-                    </Link>
-                  </div>
-                </article>
-              ))}
-            </div>
+            <BlogPostGrid posts={posts} allTags={allTags} />
           )}
         </div>
       </section>
