@@ -3,8 +3,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
+import remarkGfm from 'remark-gfm'
 import remarkRehype from 'remark-rehype'
 import rehypeRaw from 'rehype-raw'
+import rehypeMermaid from 'rehype-mermaid'
 import rehypeStringify from 'rehype-stringify'
 
 const POSTS_DIRECTORY = path.join(process.cwd(), 'content/blog/posts')
@@ -89,8 +91,13 @@ export async function getPostBySlug(slug: string): Promise<BlogPost | null> {
 
   const result = await unified()
     .use(remarkParse)
+    .use(remarkGfm)
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeRaw)
+    .use(rehypeMermaid, {
+      strategy: 'inline-svg',
+      mermaidConfig: { theme: 'neutral' },
+    })
     .use(rehypeStringify)
     .process(content)
 
