@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+  repository_dispatch:
+    types: [blog-content-updated]
 
 permissions:
   contents: read
@@ -20,6 +22,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Fetch blog content
+        run: git clone https://github.com/Odovey-Consulting/odovey-blog.git content/blog
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
