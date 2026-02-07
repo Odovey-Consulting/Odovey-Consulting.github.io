@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, MapPin, Phone } from 'lucide-react'
+import { Mail, MapPin, Linkedin, Youtube, Twitter } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -24,11 +24,24 @@ export function Footer() {
             <p className="text-gray-300 mb-6 max-w-md">
               Leading consultancy specializing in AI and cloud services. We help businesses transform and scale with cutting-edge technology solutions.
             </p>
+            <div className="flex items-center space-x-2 text-gray-300 mb-4">
+              <Mail className="h-4 w-4" />
+              <span>sales@odovey.com</span>
+            </div>
+            <div className="flex items-center space-x-2 text-gray-300 mb-4">
+              <MapPin className="h-4 w-4" />
+              <span>Houston, Texas, USA</span>
+            </div>
             <div className="flex space-x-4">
-              <div className="flex items-center space-x-2 text-gray-300">
-                <Mail className="h-4 w-4" />
-                <span>info@odovey.com</span>
-              </div>
+              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="LinkedIn">
+                <Linkedin className="h-5 w-5" />
+              </span>
+              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="YouTube">
+                <Youtube className="h-5 w-5" />
+              </span>
+              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="X (Twitter)">
+                <Twitter className="h-5 w-5" />
+              </span>
             </div>
           </div>
 

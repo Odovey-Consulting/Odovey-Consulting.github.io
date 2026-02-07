@@ -22,8 +22,14 @@ export default function Home() {
           description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively.',
           contactPoint: {
             '@type': 'ContactPoint',
-            email: 'info@odovey.com',
-            contactType: 'customer service',
+            email: 'sales@odovey.com',
+            contactType: 'sales',
+          },
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Houston',
+            addressRegion: 'TX',
+            addressCountry: 'US',
           },
           sameAs: [],
         }}
