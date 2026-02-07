@@ -81,26 +81,26 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>AI Implementation</li>
-              <li>AI Strategy Consulting</li>
-              <li>Cloud Migration</li>
-              <li>Cloud Architecture</li>
-              <li>Digital Transformation</li>
+              <li>AI Model Infrastructure</li>
+              <li>AI Agent Development</li>
+              <li>RAG Implementation</li>
+              <li>Cloud Migration & Modernization</li>
+              <li>Multi-Cloud Architecture</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm">
-            © 2022 Odovey Consulting. All rights reserved.
+            © 2022–2026 Chasing Cloud Careers LLC d/b/a Odovey Consulting. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
-            <Link href="/privacy" className="text-gray-400 hover:text-white text-sm transition-colors">
+            <span className="text-gray-400 text-sm">
               Privacy Policy
-            </Link>
-            <Link href="/terms" className="text-gray-400 hover:text-white text-sm transition-colors">
+            </span>
+            <span className="text-gray-400 text-sm">
               Terms of Service
-            </Link>
+            </span>
           </div>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Cloud, Zap, Shield, Users, TrendingUp, CheckCircle } from 'lucide-react'
+import { ArrowRight, Cloud, Zap, Shield, CheckCircle } from 'lucide-react'
 import { JsonLd } from '@/components/JsonLd'
 
 export const metadata: Metadata = {
@@ -113,26 +113,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="section-padding">
-        <div className="container-max">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-4xl font-bold text-primary-600 mb-2">100+</div>
-              <div className="text-gray-600">Successful Projects</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-secondary-600 mb-2">50+</div>
-              <div className="text-gray-600">Enterprise Clients</div>
-            </div>
-            <div>
-              <div className="text-4xl font-bold text-green-600 mb-2">99.9%</div>
-              <div className="text-gray-600">Uptime Guaranteed</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Preview */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
@@ -151,19 +131,19 @@ export default function Home() {
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">AI Strategy & Consulting</span>
+                  <span className="text-gray-600">AI Model Infrastructure</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Machine Learning Implementation</span>
+                  <span className="text-gray-600">AI Agent Development</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Data Analytics & Insights</span>
+                  <span className="text-gray-600">Supervised Fine-Tuning</span>
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">AI Model Development</span>
+                  <span className="text-gray-600">RAG Implementation</span>
                 </li>
               </ul>
               <Link href="/services" className="text-primary-600 hover:text-primary-700 font-medium">
@@ -188,7 +168,7 @@ export default function Home() {
                 </li>
                 <li className="flex items-center">
                   <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Cost Optimization</span>
+                  <span className="text-gray-600">Performance & Cost Optimization</span>
                 </li>
               </ul>
               <Link href="/services" className="text-primary-600 hover:text-primary-700 font-medium">

@@ -30,20 +30,11 @@ export const metadata: Metadata = {
     siteName: 'Odovey Consulting',
     locale: 'en_US',
     type: 'website',
-    images: [
-      {
-        url: '/images/og-default.png',
-        width: 1200,
-        height: 630,
-        alt: 'Odovey Consulting - AI & Cloud Professional Services',
-      },
-    ],
   },
   twitter: {
-    card: 'summary_large_image',
+    card: 'summary',
     title: 'Odovey Consulting - AI & Cloud Professional Services',
     description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively.',
-    images: ['/images/og-default.png'],
   },
   alternates: {
     canonical: '/',

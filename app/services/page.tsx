@@ -221,7 +221,7 @@ export default function Services() {
               Our Service Delivery Process
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A proven methodology that ensures successful outcomes and measurable results.
+              A structured methodology that we apply consistently across engagements.
             </p>
           </div>
           

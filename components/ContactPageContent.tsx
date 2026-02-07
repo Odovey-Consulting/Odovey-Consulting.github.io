@@ -81,26 +81,8 @@ export default function ContactPageContent() {
                     <Clock className="h-6 w-6 text-purple-600" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Business Hours</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM</p>
-                    <p className="text-gray-600">Weekend: Emergency support available</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 p-6 bg-white rounded-lg border border-gray-200">
-                <h3 className="font-semibold text-gray-900 mb-2">Response Time</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  We typically respond to all inquiries within 24 hours.
-                </p>
-                <div className="grid grid-cols-2 gap-4 text-center">
-                  <div>
-                    <div className="text-lg font-bold text-primary-600">&lt; 24h</div>
-                    <div className="text-xs text-gray-600">Response Time</div>
-                  </div>
-                  <div>
-                    <div className="text-lg font-bold text-secondary-600">24/7</div>
-                    <div className="text-xs text-gray-600">Emergency Support</div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Availability</h3>
+                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM CST</p>
                   </div>
                 </div>
               </div>
@@ -144,9 +126,9 @@ export default function ContactPageContent() {
             </div>
 
             <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Do you provide ongoing support?</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">What is your engagement model?</h3>
               <p className="text-gray-600 text-sm">
-                Absolutely. We offer comprehensive support packages including monitoring, maintenance, optimization, and strategic consulting.
+                We offer project-based engagements tailored to your specific needs. Each engagement includes a defined scope, timeline, and deliverables agreed upon before work begins.
               </p>
             </div>
           </div>

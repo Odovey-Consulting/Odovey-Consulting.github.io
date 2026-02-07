@@ -41,7 +41,7 @@ export default function About() {
                 To empower organizations with cutting-edge AI and cloud solutions that drive innovation, efficiency, and sustainable growth. We believe in making advanced technology accessible and practical for businesses of all sizes.
               </p>
               <p className="text-gray-600">
-                Our mission extends beyond just implementation – we&apos;re committed to building long-term partnerships that evolve with your business needs and technological advancements.
+                Our mission extends beyond implementation – we aim to build partnerships that evolve with your business needs and technological advancements.
               </p>
             </div>
             
@@ -115,7 +115,7 @@ export default function About() {
               Our Approach
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We follow a proven methodology that ensures successful outcomes and sustainable results.
+              A structured methodology that we apply consistently across engagements.
             </p>
           </div>
           
@@ -124,39 +124,39 @@ export default function About() {
               <div className="w-12 h-12 bg-primary-600 text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 1
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Discover</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Assessment</h3>
               <p className="text-gray-600 text-sm">
-                We thoroughly understand your business objectives, current infrastructure, and specific challenges.
+                Comprehensive evaluation of your current infrastructure, processes, and business objectives.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-12 h-12 bg-primary-600 text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 2
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Design</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Strategy</h3>
               <p className="text-gray-600 text-sm">
-                We create customized solutions that align with your goals and integrate seamlessly with existing systems.
+                Development of customized strategies and roadmaps aligned with your business goals.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-12 h-12 bg-primary-600 text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 3
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Deploy</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Implementation</h3>
               <p className="text-gray-600 text-sm">
-                We implement solutions with minimal disruption, ensuring smooth transitions and optimal performance.
+                Careful execution of solutions with minimal disruption to your ongoing operations.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-12 h-12 bg-primary-600 text-white rounded-lg flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 4
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Deliver</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Optimization</h3>
               <p className="text-gray-600 text-sm">
-                We provide ongoing support, optimization, and strategic guidance to maximize your technology investment.
+                Continuous monitoring, optimization, and strategic guidance to maximize value delivery.
               </p>
             </div>
           </div>
@@ -187,28 +187,28 @@ export default function About() {
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Proven Track Record</h3>
-                    <p className="text-gray-600">We&apos;ve successfully delivered 100+ projects across various industries and business sizes.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Practical Experience</h3>
+                    <p className="text-gray-600">We have delivered AI and cloud projects across multiple industries and business sizes.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Strategic Partnership</h3>
-                    <p className="text-gray-600">We work as an extension of your team, providing ongoing support and strategic guidance.</p>
+                    <p className="text-gray-600">We work as an extension of your team, providing strategic guidance throughout each engagement.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
                     <span className="text-white text-xs">✓</span>
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Industry Recognition</h3>
-                    <p className="text-gray-600">Recognized as a leader in AI and cloud services by industry analysts and client testimonials.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">AI-First Approach</h3>
+                    <p className="text-gray-600">We specialize in modern AI infrastructure — model deployment, agent development, fine-tuning, and RAG — built on solid cloud foundations.</p>
                   </div>
                 </div>
               </div>
@@ -217,21 +217,11 @@ export default function About() {
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <div className="text-center mb-6">
                 <Globe className="h-16 w-16 text-primary-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-gray-900">Global Reach, Local Expertise</h3>
+                <h3 className="text-2xl font-bold text-gray-900">Based in Houston, Serving Globally</h3>
               </div>
-              <p className="text-gray-600 text-center mb-6">
-                With clients spanning across continents, we bring global best practices while understanding local business contexts and requirements.
+              <p className="text-gray-600 text-center">
+                We bring global best practices in AI and cloud infrastructure while understanding local business contexts and requirements. Our professional services are delivered remotely and on-site as each engagement demands.
               </p>
-              <div className="grid grid-cols-2 gap-4 text-center">
-                <div>
-                  <div className="text-2xl font-bold text-primary-600">24/7</div>
-                  <div className="text-sm text-gray-600">Global Support</div>
-                </div>
-                <div>
-                  <div className="text-2xl font-bold text-secondary-600">15+</div>
-                  <div className="text-sm text-gray-600">Countries Served</div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
