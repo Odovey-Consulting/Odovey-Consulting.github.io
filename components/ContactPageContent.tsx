@@ -7,13 +7,13 @@ export default function ContactPageContent() {
   useEffect(() => {
     // Load Typeform embed script
     const script = document.createElement('script')
-    script.src = '//embed.typeform.com/next/embed.js'
+    script.src = 'https://embed.typeform.com/next/embed.js'
     script.async = true
     document.head.appendChild(script)
 
     return () => {
       // Cleanup script on unmount
-      const existingScript = document.querySelector('script[src="//embed.typeform.com/next/embed.js"]')
+      const existingScript = document.querySelector('script[src="https://embed.typeform.com/next/embed.js"]')
       if (existingScript) {
         document.head.removeChild(existingScript)
       }
