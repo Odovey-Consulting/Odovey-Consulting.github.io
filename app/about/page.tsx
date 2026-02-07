@@ -13,7 +13,7 @@ export default function About() {
               <span className="text-primary-600 block">Odovey Consulting</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We are a forward-thinking consultancy dedicated to helping businesses harness the transformative power of cloud technology and artificial intelligence.
+              We are a forward-thinking consultancy dedicated to helping businesses harness the transformative power of artificial intelligence and cloud technology.
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6">
-                To empower organizations with cutting-edge cloud and AI solutions that drive innovation, efficiency, and sustainable growth. We believe in making advanced technology accessible and practical for businesses of all sizes.
+                To empower organizations with cutting-edge AI and cloud solutions that drive innovation, efficiency, and sustainable growth. We believe in making advanced technology accessible and practical for businesses of all sizes.
               </p>
               <p className="text-gray-600">
                 Our mission extends beyond just implementation – we&apos;re committed to building long-term partnerships that evolve with your business needs and technological advancements.
@@ -42,10 +42,10 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
               <p className="text-lg text-gray-600 mb-6">
-                To be the leading catalyst for digital transformation, recognized globally for our expertise in cloud architecture and AI implementation. We envision a future where every business can leverage these technologies to reach their full potential.
+                To be the leading catalyst for digital transformation, recognized globally for our expertise in AI implementation and cloud architecture. We envision a future where every business can leverage these technologies to reach their full potential.
               </p>
               <p className="text-gray-600">
-                We strive to set industry standards for excellence, innovation, and client success in the rapidly evolving landscape of cloud and AI services.
+                We strive to set industry standards for excellence, innovation, and client success in the rapidly evolving landscape of AI and cloud services.
               </p>
             </div>
           </div>
@@ -199,7 +199,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Industry Recognition</h3>
-                    <p className="text-gray-600">Recognized as a leader in cloud and AI services by industry analysts and client testimonials.</p>
+                    <p className="text-gray-600">Recognized as a leader in AI and cloud services by industry analysts and client testimonials.</p>
                   </div>
                 </div>
               </div>

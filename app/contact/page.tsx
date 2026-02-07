@@ -32,7 +32,7 @@ export default function Contact() {
               <span className="text-primary-600 block">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Ready to transform your business with cloud and AI solutions? Let&apos;s start the conversation.
+              Ready to transform your business with AI and cloud solutions? Let&apos;s start the conversation.
             </p>
           </div>
         </div>

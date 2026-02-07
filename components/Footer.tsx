@@ -22,7 +22,7 @@ export function Footer() {
         </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Leading consultancy specializing in cloud and AI services. We help businesses transform and scale with cutting-edge technology solutions.
+              Leading consultancy specializing in AI and cloud services. We help businesses transform and scale with cutting-edge technology solutions.
             </p>
             <div className="flex space-x-4">
               <div className="flex items-center space-x-2 text-gray-300">
@@ -68,11 +68,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Cloud Migration</li>
               <li>AI Implementation</li>
-              <li>Digital Transformation</li>
-              <li>Cloud Architecture</li>
               <li>AI Strategy Consulting</li>
+              <li>Cloud Migration</li>
+              <li>Cloud Architecture</li>
+              <li>Digital Transformation</li>
             </ul>
           </div>
         </div>

@@ -11,10 +11,10 @@ export default function Home() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               Transform Your Business with
-              <span className="text-primary-600 block">Cloud & AI Excellence</span>
+              <span className="text-primary-600 block">AI & Cloud Excellence</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Leading consultancy specializing in cloud and AI services. We help businesses scale, innovate, and succeed with cutting-edge technology solutions.
+              Leading consultancy specializing in AI and cloud services. We help businesses scale, innovate, and succeed with cutting-edge technology solutions.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg px-8 py-4">
@@ -43,22 +43,22 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Cloud className="h-6 w-6 text-primary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Cloud Expertise</h3>
-              <p className="text-gray-600">
-                Comprehensive cloud migration, architecture, and optimization services across all major cloud platforms.
-              </p>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
               <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
                 <Zap className="h-6 w-6 text-secondary-600" />
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">AI Innovation</h3>
               <p className="text-gray-600">
                 Strategic AI implementation and consulting to unlock new possibilities and competitive advantages.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                <Cloud className="h-6 w-6 text-primary-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">Cloud Expertise</h3>
+              <p className="text-gray-600">
+                Comprehensive cloud migration, architecture, and optimization services across all major cloud platforms.
               </p>
             </div>
             
@@ -109,31 +109,6 @@ export default function Home() {
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Cloud Services</h3>
-              <ul className="space-y-3 mb-6">
-                <li className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Cloud Migration & Modernization</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Multi-Cloud Architecture</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">DevOps & Automation</span>
-                </li>
-                <li className="flex items-center">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
-                  <span className="text-gray-600">Cost Optimization</span>
-                </li>
-              </ul>
-              <Link href="/services" className="text-primary-600 hover:text-primary-700 font-medium">
-                Learn More →
-              </Link>
-            </div>
-            
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <h3 className="text-2xl font-semibold text-gray-900 mb-4">AI Services</h3>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-center">
@@ -157,6 +132,31 @@ export default function Home() {
                 Learn More →
               </Link>
             </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Cloud Services</h3>
+              <ul className="space-y-3 mb-6">
+                <li className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-600">Cloud Migration & Modernization</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-600">Multi-Cloud Architecture</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-600">DevOps & Automation</span>
+                </li>
+                <li className="flex items-center">
+                  <CheckCircle className="h-5 w-5 text-green-500 mr-3" />
+                  <span className="text-gray-600">Cost Optimization</span>
+                </li>
+              </ul>
+              <Link href="/services" className="text-primary-600 hover:text-primary-700 font-medium">
+                Learn More →
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -168,7 +168,7 @@ export default function Home() {
             Ready to Transform Your Business?
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Let&apos;s discuss how our cloud and AI expertise can drive your business forward.
+            Let&apos;s discuss how our AI and cloud expertise can drive your business forward.
           </p>
           <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
             Get Started Today
