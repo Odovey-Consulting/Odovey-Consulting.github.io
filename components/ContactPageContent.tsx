@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect } from 'react'
-import { Mail, MapPin, Clock } from 'lucide-react'
+import { Mail, MapPin } from 'lucide-react'
 
 export default function ContactPageContent() {
   useEffect(() => {
@@ -73,16 +73,6 @@ export default function ContactPageContent() {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Office</h3>
                     <p className="text-gray-600">Houston, Texas, USA</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
-                    <Clock className="h-6 w-6 text-purple-600" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Availability</h3>
-                    <p className="text-gray-600">Monday - Friday: 9:00 AM - 6:00 PM CST</p>
                   </div>
                 </div>
               </div>

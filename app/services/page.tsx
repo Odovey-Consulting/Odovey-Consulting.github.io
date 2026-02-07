@@ -225,44 +225,34 @@ export default function Services() {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 1
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Assessment</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Assess</h3>
               <p className="text-gray-600 text-sm">
                 Comprehensive evaluation of your current infrastructure, processes, and business objectives.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Strategy</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Strategize</h3>
               <p className="text-gray-600 text-sm">
                 Development of customized strategies and roadmaps aligned with your business goals.
               </p>
             </div>
-            
+
             <div className="text-center">
               <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Implementation</h3>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">Implement</h3>
               <p className="text-gray-600 text-sm">
                 Careful execution of solutions with minimal disruption to your ongoing operations.
-              </p>
-            </div>
-            
-            <div className="text-center">
-              <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
-                4
-              </div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Optimization</h3>
-              <p className="text-gray-600 text-sm">
-                Continuous monitoring, optimization, and support to ensure maximum value delivery.
               </p>
             </div>
           </div>
