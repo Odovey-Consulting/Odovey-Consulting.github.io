@@ -1,4 +1,13 @@
+import type { Metadata } from 'next'
 import { Users, Target, Award, Lightbulb, Globe, Rocket } from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about Odovey Consulting — our mission to empower organizations with AI and cloud solutions, our values of excellence, innovation, and partnership, and our proven approach to digital transformation.',
+  alternates: {
+    canonical: '/about/',
+  },
+}
 
 export default function About() {
   return (

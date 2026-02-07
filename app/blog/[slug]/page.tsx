@@ -2,6 +2,7 @@ import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import { Calendar, Clock, ArrowLeft, User } from 'lucide-react'
 import { getAllPostSlugs, getPostBySlug } from '@/lib/blog'
+import { JsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export function generateStaticParams() {
@@ -17,19 +18,28 @@ export async function generateMetadata({
   const post = await getPostBySlug(slug)
 
   if (!post) {
-    return { title: 'Post Not Found - Odovey Consulting' }
+    return { title: 'Post Not Found' }
   }
 
   return {
-    title: `${post.title} - Odovey Consulting`,
+    title: post.title,
     description: post.excerpt,
+    alternates: {
+      canonical: `/blog/${slug}/`,
+    },
     openGraph: {
       title: post.title,
       description: post.excerpt,
+      url: `/blog/${slug}/`,
       type: 'article',
       publishedTime: post.date,
       authors: [post.author],
       tags: post.tags,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
     },
   }
 }
@@ -48,6 +58,33 @@ export default async function BlogPostPage({
 
   return (
     <div className="bg-white">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          headline: post.title,
+          description: post.excerpt,
+          author: {
+            '@type': 'Person',
+            name: post.author,
+          },
+          datePublished: post.date,
+          publisher: {
+            '@type': 'Organization',
+            name: 'Odovey Consulting',
+            url: 'https://odovey.com',
+            logo: {
+              '@type': 'ImageObject',
+              url: 'https://odovey.com/images/logo.png',
+            },
+          },
+          mainEntityOfPage: {
+            '@type': 'WebPage',
+            '@id': `https://odovey.com/blog/${slug}/`,
+          },
+          keywords: post.tags.join(', '),
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50"></div>

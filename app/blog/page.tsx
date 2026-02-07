@@ -3,11 +3,14 @@ import BlogPostGrid from '@/components/BlogPostGrid'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog - Odovey Consulting',
+  title: 'Blog',
   description: 'Insights on cloud technology, AI implementation, and digital transformation from the Odovey Consulting team.',
   openGraph: {
-    title: 'Blog - Odovey Consulting',
+    title: 'Blog',
     description: 'Insights on cloud technology, AI implementation, and digital transformation from the Odovey Consulting team.',
+  },
+  alternates: {
+    canonical: '/blog/',
   },
 }
 

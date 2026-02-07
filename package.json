@@ -6,7 +6,7 @@
     "fetch-content": "bash scripts/fetch-content.sh",
     "predev": "npm run fetch-content",
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && node scripts/generate-sitemap.mjs",
     "export": "next build",
     "start": "next start",
     "lint": "eslint .",

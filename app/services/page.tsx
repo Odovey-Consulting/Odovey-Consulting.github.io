@@ -1,15 +1,25 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
-import { 
-  Cloud, 
-  Zap, 
-  Database, 
-  Settings, 
-  Brain, 
-  Cpu, 
+import {
+  Cloud,
+  Zap,
+  Database,
+  Settings,
+  Brain,
+  Cpu,
   Network,
   Gauge,
   ArrowRight
 } from 'lucide-react'
+import { JsonLd } from '@/components/JsonLd'
+
+export const metadata: Metadata = {
+  title: 'AI & Cloud Professional Services',
+  description: 'Comprehensive AI and cloud professional services including AI model infrastructure, agent development, fine-tuning, RAG implementation, cloud migration, multi-cloud architecture, and DevOps automation.',
+  alternates: {
+    canonical: '/services/',
+  },
+}
 
 export default function Services() {
   const cloudServices = [
@@ -80,6 +90,37 @@ export default function Services() {
 
   return (
     <div className="bg-white">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'ProfessionalService',
+          name: 'Odovey Consulting',
+          url: 'https://odovey.com/services/',
+          description: 'Comprehensive AI and cloud professional services including AI model infrastructure, agent development, fine-tuning, RAG implementation, cloud migration, multi-cloud architecture, and DevOps automation.',
+          hasOfferCatalog: {
+            '@type': 'OfferCatalog',
+            name: 'AI & Cloud Services',
+            itemListElement: [
+              ...aiServices.map((s) => ({
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: s.title,
+                  description: s.description,
+                },
+              })),
+              ...cloudServices.map((s) => ({
+                '@type': 'Offer',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: s.title,
+                  description: s.description,
+                },
+              })),
+            ],
+          },
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50"></div>

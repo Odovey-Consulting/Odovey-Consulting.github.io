@@ -1,9 +1,41 @@
+import type { Metadata } from 'next'
 import Link from 'next/link'
 import { ArrowRight, Cloud, Zap, Shield, Users, TrendingUp, CheckCircle } from 'lucide-react'
+import { JsonLd } from '@/components/JsonLd'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+}
 
 export default function Home() {
   return (
     <div className="bg-white">
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'Organization',
+          name: 'Odovey Consulting',
+          url: 'https://odovey.com',
+          logo: 'https://odovey.com/images/logo.png',
+          description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively.',
+          contactPoint: {
+            '@type': 'ContactPoint',
+            email: 'info@odovey.com',
+            contactType: 'customer service',
+          },
+          sameAs: [],
+        }}
+      />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Odovey Consulting',
+          url: 'https://odovey.com',
+        }}
+      />
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50"></div>

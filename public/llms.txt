@@ -1,0 +1,37 @@
+# Odovey Consulting
+
+> Leading consultancy specializing in AI and cloud professional services. We help businesses scale, innovate, and succeed with cutting-edge technology solutions.
+
+## About
+
+Odovey Consulting is a forward-thinking consultancy dedicated to helping businesses harness the transformative power of artificial intelligence and cloud technology. We combine deep technical expertise with strategic business insight to deliver transformative results.
+
+## Services
+
+### Modern AI Solutions
+- AI Model Infrastructure: Enterprise-grade infrastructure for deploying and scaling transformer models
+- AI Agent Development: Intelligent agents powered by large language models for complex workflow automation
+- Supervised Fine-Tuning: Customize foundation models with LoRA, QLoRA, and domain adaptation techniques
+- RAG Implementation: Retrieval-Augmented Generation systems combining proprietary data with LLMs
+- Language & Vision Models: State-of-the-art transformer models for text, image, and multimodal applications
+- AI System Integrations: Seamless AI integration into existing systems with robust APIs
+
+### Cloud Services
+- Cloud Migration & Modernization: Seamless infrastructure migration with minimal downtime
+- Multi-Cloud Architecture: Robust multi-cloud strategies avoiding vendor lock-in
+- DevOps & Automation: Advanced CI/CD pipelines, infrastructure as code, and process automation
+- Performance & Cost Optimization: Intelligent resource management and performance tuning
+
+## Pages
+
+- Home: https://odovey.com/
+- About Us: https://odovey.com/about/
+- Services: https://odovey.com/services/
+- Blog: https://odovey.com/blog/
+- Contact: https://odovey.com/contact/
+
+## Contact
+
+- Email: info@odovey.com
+- Sales: sales@odovey.com
+- Website: https://odovey.com
