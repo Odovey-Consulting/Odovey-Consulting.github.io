@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Users, Target, Award, Lightbulb, Globe, Rocket } from 'lucide-react'
+import { Users, Target, Award, Lightbulb, Globe, Rocket, Check } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -164,7 +164,7 @@ export default function About() {
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <span className="text-white text-xs">✓</span>
+                    <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Deep Technical Expertise</h3>
@@ -174,7 +174,7 @@ export default function About() {
                 
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <span className="text-white text-xs">✓</span>
+                    <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Practical Experience</h3>
@@ -184,7 +184,7 @@ export default function About() {
 
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <span className="text-white text-xs">✓</span>
+                    <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Strategic Partnership</h3>
@@ -194,7 +194,7 @@ export default function About() {
 
                 <div className="flex items-start">
                   <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
-                    <span className="text-white text-xs">✓</span>
+                    <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">AI-First Approach</h3>
