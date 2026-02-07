@@ -9,6 +9,7 @@ const staticPages = [
   { path: '/blog/', priority: '0.8' },
   { path: '/about/', priority: '0.7' },
   { path: '/contact/', priority: '0.7' },
+  { path: '/privacy/', priority: '0.3' },
 ]
 
 const today = new Date().toISOString().split('T')[0]
