@@ -163,7 +163,7 @@ export default function About() {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                     <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
@@ -173,7 +173,7 @@ export default function About() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                     <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
@@ -183,7 +183,7 @@ export default function About() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                     <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
@@ -193,7 +193,7 @@ export default function About() {
                 </div>
 
                 <div className="flex items-start">
-                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
                     <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
