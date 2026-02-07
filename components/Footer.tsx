@@ -92,9 +92,6 @@ export function Footer() {
             <span className="text-gray-400 text-sm">
               Privacy Policy
             </span>
-            <span className="text-gray-400 text-sm">
-              Terms of Service
-            </span>
           </div>
         </div>
       </div>
