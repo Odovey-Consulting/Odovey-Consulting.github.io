@@ -31,7 +31,7 @@ export default function Home() {
             addressRegion: 'TX',
             addressCountry: 'US',
           },
-          sameAs: [],
+          sameAs: ['https://www.linkedin.com/company/odovey-consulting'],
         }}
       />
       <JsonLd

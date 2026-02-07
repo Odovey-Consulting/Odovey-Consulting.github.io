@@ -33,9 +33,9 @@ export function Footer() {
               <span>Houston, Texas, USA</span>
             </div>
             <div className="flex space-x-4">
-              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/odovey-consulting" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
-              </span>
+              </a>
               <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="YouTube">
                 <Youtube className="h-5 w-5" />
               </span>
