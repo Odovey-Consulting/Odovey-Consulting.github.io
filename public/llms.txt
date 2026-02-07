@@ -32,6 +32,5 @@ Odovey Consulting is a forward-thinking consultancy dedicated to helping busines
 
 ## Contact
 
-- Email: info@odovey.com
-- Sales: sales@odovey.com
+- Email: sales@odovey.com
 - Website: https://odovey.com

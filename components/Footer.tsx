@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Mail, MapPin, Linkedin, Youtube, Twitter } from 'lucide-react'
+import { Mail, MapPin, Linkedin } from 'lucide-react'
 
 export function Footer() {
   return (
@@ -36,12 +36,6 @@ export function Footer() {
               <a href="https://www.linkedin.com/company/odovey-consulting" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="YouTube">
-                <Youtube className="h-5 w-5" />
-              </span>
-              <span className="text-gray-400 hover:text-white transition-colors cursor-default" aria-label="X (Twitter)">
-                <Twitter className="h-5 w-5" />
-              </span>
             </div>
           </div>
 
