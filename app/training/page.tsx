@@ -16,10 +16,10 @@ import {
 import { JsonLd } from '@/components/JsonLd'
 import { HARNESS_ENGINEERING_REPO } from '@/lib/harness'
 
-const description = 'Corporate training in harness engineering: hands-on bootcamps where engineers build an AI agent harness from scratch, production and platform workshops, agent evaluation, and executive briefings. Delivered on-site or virtually.'
+const description = 'Corporate training on agentic AI from forward deployed engineers: hands-on harness engineering bootcamps, production and platform workshops, agent evaluation, and executive briefings. Delivered on-site or virtually.'
 
 export const metadata: Metadata = {
-  title: 'Harness Engineering Training',
+  title: 'Agentic AI Corporate Training',
   description,
   alternates: {
     canonical: '/training/',
@@ -55,10 +55,10 @@ export default function Training() {
     },
     {
       icon: Layers,
-      title: 'Agent Platform Engineering',
+      title: 'Agentic Platform Engineering',
       audience: 'Platform & architecture teams',
       format: '1–2 day workshop',
-      description: 'Turn one harness into a shared platform: reusable components, model routing, execution environments, and a developer experience other teams want to use.',
+      description: 'Design and run a shared agentic platform: governed model access and routing, reusable components, execution environments, and a developer experience other teams want to use.',
       outcomes: ['Reference platform architecture', 'Reusable harness components', 'Model-agnostic interfaces', 'Self-service patterns for teams'],
     },
     {
@@ -93,7 +93,7 @@ export default function Training() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Harness Engineering Training Programs',
+          name: 'Agentic AI Training Programs',
           description,
           itemListElement: programs.map((p, index) => ({
             '@type': 'ListItem',
@@ -117,11 +117,11 @@ export default function Training() {
         <div className="relative container-max section-padding">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Harness Engineering
-              <span className="text-primary-600 block">Training</span>
+              Agentic AI
+              <span className="text-primary-600 block">Corporate Training</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Your engineers learn what an agent is made of by building one. They start from a bare model and add one primitive at a time until they have an agent that is evaluated and ready for production.
+              Training taught by the engineers who build and deploy agentic solutions for a living. Your people learn by doing, and engineers build a working agent from the ground up.
             </p>
             <Link href="/contact" className="btn-primary text-lg px-8 py-4">
               Plan a Training
@@ -236,7 +236,7 @@ export default function Training() {
       <section className="section-padding bg-primary-600">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Teach Your Team Harness Engineering
+            Upskill Your Team on Agentic AI
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Tell us who you want to train and what they need to be able to do. We&apos;ll recommend a program and format.

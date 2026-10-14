@@ -4,10 +4,10 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Insights on harness engineering, agent architecture, agent platforms, and production agentic AI from the Odovey Consulting team.',
+  description: 'Insights on building and deploying agentic AI: agent architecture, agentic platforms, harness engineering, and running agents in production.',
   openGraph: {
     title: 'Blog',
-    description: 'Insights on harness engineering, agent architecture, agent platforms, and production agentic AI from the Odovey Consulting team.',
+    description: 'Insights on building and deploying agentic AI: agent architecture, agentic platforms, harness engineering, and running agents in production.',
   },
   alternates: {
     canonical: '/blog/',
@@ -30,7 +30,7 @@ export default function BlogPage() {
               <span className="text-primary-600 block">Blog</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Practical writing on harness engineering, agent architecture, agent platforms, and running AI agents in production.
+              Practical writing on building and deploying agents, agentic platforms, and harness engineering.
             </p>
           </div>
         </div>

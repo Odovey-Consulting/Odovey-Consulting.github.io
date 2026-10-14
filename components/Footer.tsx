@@ -22,7 +22,7 @@ export function Footer() {
         </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Harness engineering for agentic AI. We build the body around the model: agentic solutions and agent platforms. We also teach teams to build them.
+              Forward deployed engineers for agentic AI. We build and deploy agentic solutions and platforms, and teach your team to run them.
             </p>
             <div className="flex items-center space-x-2 text-gray-300 mb-4">
               <Mail className="h-4 w-4" />
@@ -80,11 +80,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>Agent Harness Engineering</li>
-              <li>Agent Platform Engineering</li>
-              <li>Harness Assessments</li>
+              <li>Agentic Platforms</li>
+              <li>Agents & Agentic Workflows</li>
+              <li>Custom Agent Harnesses</li>
               <li>Team Enablement & Co-Build</li>
-              <li>Harness Engineering Training</li>
+              <li>Corporate Training</li>
             </ul>
           </div>
         </div>

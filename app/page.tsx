@@ -1,6 +1,20 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Brain, Bot, Users, GraduationCap, CheckCircle, BookOpen } from 'lucide-react'
+import {
+  ArrowRight,
+  Bot,
+  Users,
+  GraduationCap,
+  CheckCircle,
+  BookOpen,
+  Layers,
+  Workflow,
+  Wrench,
+  Plug,
+  Compass,
+  Rocket,
+  Handshake,
+} from 'lucide-react'
 import { JsonLd } from '@/components/JsonLd'
 import { HARNESS_ENGINEERING_REPO, harnessPrimitives, productionQuestions } from '@/lib/harness'
 
@@ -20,7 +34,7 @@ export default function Home() {
           name: 'Odovey Consulting',
           url: 'https://odovey.com',
           logo: 'https://odovey.com/images/logo.png',
-          description: 'Harness engineering consultancy. We build agentic solutions and agent platforms, enable engineering teams, and deliver corporate training on harness engineering.',
+          description: 'Professional services firm of forward deployed engineers who build and deploy agentic AI solutions and platforms for organizations, enable their teams, and deliver corporate training.',
           contactPoint: {
             '@type': 'ContactPoint',
             email: 'sales@odovey.com',
@@ -49,14 +63,14 @@ export default function Home() {
         <div className="relative container-max section-padding">
           <div className="text-center">
             <p className="text-sm font-semibold uppercase tracking-wider text-primary-600 mb-4">
-              Harness Engineering for Agentic AI
+              Forward Deployed Engineers for Agentic AI
             </p>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              The Model Is the Mind.
-              <span className="text-primary-600 block">We Build the Body.</span>
+              We Build and Deploy
+              <span className="text-primary-600 block">Agentic Solutions</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Every AI agent is a model inside a harness. The harness decides what the model sees, what it can do, and when it stops. We engineer harnesses and the platforms that run them, and we teach your engineers to do the same.
+              Odovey Consulting is a professional services firm of forward deployed engineers. We embed with your team, build the agents and platforms your organization needs, deploy them into your environment, and make sure your people can run them.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg px-8 py-4">
@@ -71,62 +85,104 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What is harness engineering */}
+      {/* What we build */}
       <section className="section-padding">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              What Is Harness Engineering?
+              What We Build and Deploy
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              An agent observes, thinks, and acts, then repeats. The model does the thinking. Everything else is the harness, and that is where most agents succeed or fail.
+              Every engagement is different. We work across the whole stack, from the infrastructure that agents run on to the agents themselves.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
-                <Brain className="h-6 w-6 text-secondary-600" />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                icon: Layers,
+                title: 'Agentic Platforms',
+                text: 'The shared foundation for building and running agents across your organization, including model access, routing, policy, observability, and the developer experience on top.',
+              },
+              {
+                icon: Workflow,
+                title: 'Agents & Agentic Workflows',
+                text: 'Agents that do real work inside your business processes, from structured, workflow-driven automation to more autonomous agents, with humans in the loop where it matters.',
+              },
+              {
+                icon: Wrench,
+                title: 'Custom Agent Harnesses',
+                text: 'Internal agents and tools that your organization owns and controls, built around your systems, security requirements, and the way your teams work.',
+              },
+              {
+                icon: Plug,
+                title: 'Integrations & Infrastructure',
+                text: 'Connecting agents to your data, APIs, and systems of record, and deploying everything securely into your cloud or on-premises environment.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow">
+                <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="h-6 w-6 text-primary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.text}</p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">The Model: the Mind</h3>
-              <p className="text-gray-600 mb-4">
-                Tokens in, tokens out. A model predicts what comes next, and that&apos;s all. It can&apos;t capture its own inputs, take action, or decide when the work is done.
-              </p>
-              <p className="text-gray-600">
-                Models improve and change constantly. Choose one that fits the work, and plan to swap it later.
-              </p>
-            </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            <div className="lg:col-span-2 bg-white p-8 rounded-xl shadow-sm border-2 border-primary-200">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Bot className="h-6 w-6 text-primary-600" />
+      {/* Forward deployed model */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              Forward Deployed, Not Hands-Off
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We don&apos;t hand you a slide deck and leave. Our engineers work inside your environment, alongside your team, until the solution is running in production.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {[
+              {
+                icon: Compass,
+                title: 'Embedded With Your Team',
+                text: 'We join your stand-ups, work in your repositories and cloud accounts, and learn your systems and constraints firsthand.',
+              },
+              {
+                icon: Rocket,
+                title: 'Shipped to Production',
+                text: 'Success means agents running in your environment and doing real work, not a proof of concept that stalls after the demo.',
+              },
+              {
+                icon: Handshake,
+                title: 'Handed Over for Good',
+                text: 'Code, runbooks, and know-how stay with your team. We pair as we build so you can run and extend what we delivered.',
+              },
+            ].map((item) => (
+              <div key={item.title} className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                  <item.icon className="h-6 w-6 text-secondary-600" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{item.title}</h3>
+                <p className="text-gray-600">{item.text}</p>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">The Harness: the Body</h3>
-              <p className="text-gray-600 mb-6">
-                The harness does everything else. Every agent, from a coding assistant to a customer-facing workflow, reduces to the same five primitives. Agents differ in how each one is built.
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {harnessPrimitives.map((primitive) => (
-                  <div key={primitive.name} className="rounded-lg bg-gray-50 p-4">
-                    <p className="font-semibold text-gray-900">{primitive.name}</p>
-                    <p className="text-sm text-gray-600">{primitive.role}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Three Pillars */}
-      <section className="section-padding bg-gray-50">
+      <section className="section-padding">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               How We Help
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              We build harnesses for you, build them with you, or teach your team to build them. Most clients do all three.
+              We build for you, build with you, or train your team to build on its own. Most clients do all three.
             </p>
           </div>
 
@@ -135,18 +191,18 @@ export default function Home() {
               {
                 icon: Bot,
                 iconClass: 'bg-primary-100 text-primary-600',
-                title: 'Build',
-                text: 'We design and deliver agentic solutions, from a single purpose-built agent to a shared agent platform your teams build on.',
-                items: ['Purpose-built agent harnesses', 'Agent platform engineering', 'Production readiness reviews'],
+                title: 'Build & Deploy',
+                text: 'Forward deployed engineers design, build, and deploy agentic solutions and platforms in your environment.',
+                items: ['Agentic platforms', 'Agents & agentic workflows', 'Custom agent harnesses'],
                 href: '/services#build',
-                cta: 'Build services',
+                cta: 'Build & deploy services',
               },
               {
                 icon: Users,
                 iconClass: 'bg-secondary-100 text-secondary-600',
                 title: 'Enable',
-                text: 'We embed with your engineers and pair on real harness work, so the skills stay with your team after we leave.',
-                items: ['Co-build engagements', 'Architecture & harness reviews', 'Internal agent platform teams'],
+                text: 'We pair with your engineers on real work, so the skills stay with your team after we leave.',
+                items: ['Co-build engagements', 'Architecture reviews & advisory', 'Internal platform team setup'],
                 href: '/services#enable',
                 cta: 'Enablement services',
               },
@@ -154,8 +210,8 @@ export default function Home() {
                 icon: GraduationCap,
                 iconClass: 'bg-green-100 text-green-600',
                 title: 'Train',
-                text: 'We run corporate training on harness engineering, from leadership briefings to hands-on bootcamps where engineers build a harness from scratch.',
-                items: ['Harness engineering bootcamps', 'Production harness workshops', 'Executive briefings'],
+                text: 'We run corporate training on building agents, from leadership briefings to hands-on engineering bootcamps.',
+                items: ['Hands-on engineering bootcamps', 'Production & platform workshops', 'Executive briefings'],
                 href: '/training',
                 cta: 'Training programs',
               },
@@ -184,14 +240,14 @@ export default function Home() {
       </section>
 
       {/* Production readiness */}
-      <section className="section-padding">
+      <section className="section-padding bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               From Demo to Production
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              A working demo isn&apos;t a production agent. Getting there means asking six questions of every primitive in the harness. We build the answers into everything we deliver.
+              A working demo isn&apos;t a production system. Everything we deploy has answers to six questions.
             </p>
           </div>
 
@@ -206,16 +262,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Model-agnostic + open curriculum */}
-      <section className="section-padding bg-gray-50">
+      {/* Vendor-neutral + harness engineering */}
+      <section className="section-padding">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                Your Harness Is the Asset
+                Vendor-Neutral by Default
               </h2>
               <p className="text-gray-600">
-                We don&apos;t resell models or platforms. Models will keep changing, but a well-built harness holds your tools, context, guardrails, and evaluations. We design it so you can swap the model without starting over.
+                We don&apos;t resell models or platforms. We help you choose the models, tools, and infrastructure that fit your requirements, and we build so you can change them later without starting over.
               </p>
             </div>
 
@@ -223,12 +279,19 @@ export default function Home() {
               <div className="flex items-center mb-4">
                 <BookOpen className="h-6 w-6 text-primary-600 mr-3" />
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
-                  We Teach It in the Open
+                  Grounded in Harness Engineering
                 </h2>
               </div>
               <p className="text-gray-600 mb-4">
-                Our open Harness Engineering curriculum builds an agent one primitive at a time, evaluates it, and gets it ready for production. Read it before you hire us.
+                Every agent is a model inside a harness, the body that turns predictions into action. We teach how to build one in the open, one primitive at a time.
               </p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {harnessPrimitives.map((primitive) => (
+                  <span key={primitive.name} className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary-50 text-primary-700">
+                    {primitive.name}
+                  </span>
+                ))}
+              </div>
               <a href={HARNESS_ENGINEERING_REPO} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 font-medium">
                 Read the curriculum on GitHub →
               </a>
@@ -241,10 +304,10 @@ export default function Home() {
       <section className="section-padding bg-primary-600">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Let&apos;s Build the Body Your Agents Need
+            Put Forward Deployed Engineers on Your AI Roadmap
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Tell us what you want your agents to do. We&apos;ll show you the harness it takes, and the fastest path to running it in production.
+            Tell us what you&apos;re trying to build. We&apos;ll suggest the fastest path to getting it into production.
           </p>
           <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
             Book a Discovery Call
