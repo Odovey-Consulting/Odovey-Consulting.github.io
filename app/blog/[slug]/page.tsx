@@ -75,7 +75,7 @@ export default async function BlogPostPage({
           datePublished: post.date,
           publisher: {
             '@type': 'Organization',
-            name: 'Odovey Consulting',
+            name: "O'Dovey AI",
             url: 'https://odovey.com',
             logo: {
               '@type': 'ImageObject',

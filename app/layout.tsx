@@ -6,12 +6,12 @@ import { Footer } from '@/components/Footer'
 export const metadata: Metadata = {
   metadataBase: new URL('https://odovey.com'),
   title: {
-    template: '%s | Odovey Consulting',
-    default: 'Odovey Consulting - Forward Deployed Engineers for Agentic AI',
+    template: "%s | O'Dovey AI",
+    default: "O'Dovey AI | Forward Deployed Engineers for Agentic AI",
   },
-  description: 'Odovey Consulting is a professional services firm of forward deployed engineers. We build and deploy agentic AI solutions and platforms for organizations, enable their teams, and deliver corporate training.',
+  description: "O'Dovey AI is a professional services firm of forward deployed engineers. We build and deploy agentic AI solutions and platforms for organizations, enable their teams, and deliver corporate training.",
   keywords: 'forward deployed engineers, agentic AI consulting, agentic AI professional services, AI agent development, agentic platform, agentic workflows, AI gateway, harness engineering, AI corporate training',
-  authors: [{ name: 'Odovey Consulting' }],
+  authors: [{ name: "O'Dovey AI" }],
   robots: {
     index: true,
     follow: true,
@@ -24,10 +24,10 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Odovey Consulting - Forward Deployed Engineers for Agentic AI',
+    title: "O'Dovey AI | Forward Deployed Engineers for Agentic AI",
     description: 'Forward deployed engineers who build and deploy agentic AI solutions and platforms, enable your teams, and deliver corporate training.',
     url: 'https://odovey.com',
-    siteName: 'Odovey Consulting',
+    siteName: "O'Dovey AI",
     locale: 'en_US',
     type: 'website',
     images: [
@@ -35,13 +35,13 @@ export const metadata: Metadata = {
         url: '/images/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Odovey Consulting - Forward Deployed Engineers for Agentic AI',
+        alt: "O'Dovey AI | Forward Deployed Engineers for Agentic AI",
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Odovey Consulting - Forward Deployed Engineers for Agentic AI',
+    title: "O'Dovey AI | Forward Deployed Engineers for Agentic AI",
     description: 'Forward deployed engineers who build and deploy agentic AI solutions and platforms, enable your teams, and deliver corporate training.',
     images: ['/images/og-default.png'],
   },

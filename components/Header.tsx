@@ -25,13 +25,13 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3">
             <Image
               src="/images/logo.png"
-              alt="Odovey Consulting Logo"
+              alt="O'Dovey AI Logo"
               width={40}
               height={40}
               className="h-10 w-auto"
             />
                     <span className="text-xl font-bold text-gray-900">
-          Odovey Consulting
+          O&apos;Dovey AI
         </span>
           </Link>
 

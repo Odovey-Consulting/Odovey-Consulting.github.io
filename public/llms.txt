@@ -1,10 +1,10 @@
-# Odovey Consulting
+# O'Dovey AI
 
-> Professional services firm of forward deployed engineers for agentic AI. We build and deploy agentic solutions and platforms for organizations, enable their engineering teams through co-build and advisory, and deliver corporate training.
+> O'Dovey AI (a d/b/a of O'Dovey Ventures LLC) is a professional services firm of forward deployed engineers for agentic AI. We build and deploy agentic solutions and platforms for organizations, enable their engineering teams through co-build and advisory, and deliver corporate training.
 
 ## About
 
-Odovey Consulting embeds experienced engineers with client teams to build agentic AI solutions and deploy them into the client's environment. Engagements span the whole stack: the shared platform agents run on (model access, routing, policy, observability), workflow-based and autonomous agents, custom agent harnesses the organization owns, and the integrations that connect agents to data and systems. Everything we deploy is built for production, covering persistence, safety and security, observability, resilience, performance, and evaluation.
+O'Dovey AI embeds experienced engineers with client teams to build agentic AI solutions and deploy them into the client's environment. Engagements span the whole stack: the shared platform agents run on (model access, routing, policy, observability), workflow-based and autonomous agents, custom agent harnesses the organization owns, and the integrations that connect agents to data and systems. Everything we deploy is built for production, covering persistence, safety and security, observability, resilience, performance, and evaluation.
 
 We are vendor-neutral and do not resell models or platforms. Our engineering practice is grounded in harness engineering: every agent is a model inside a harness. We teach it through an open curriculum: https://github.com/averagejoeslab/harness-engineering
 

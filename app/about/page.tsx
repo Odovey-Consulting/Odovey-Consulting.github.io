@@ -3,7 +3,7 @@ import { Users, Target, Award, Lightbulb, Globe, Rocket, Check } from 'lucide-re
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Odovey Consulting is a professional services firm of forward deployed engineers who build and deploy agentic AI solutions and platforms for organizations, and train their teams to run them.',
+  description: "O'Dovey AI is a professional services firm of forward deployed engineers who build and deploy agentic AI solutions and platforms for organizations, and train their teams to run them.",
   alternates: {
     canonical: '/about/',
   },
@@ -19,7 +19,7 @@ export default function About() {
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
               About
-              <span className="text-primary-600 block">Odovey Consulting</span>
+              <span className="text-primary-600 block">O&apos;Dovey AI</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
               We are a professional services firm of forward deployed engineers. We build and deploy agentic AI solutions and platforms inside organizations, and we teach their people to run and extend them.

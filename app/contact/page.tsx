@@ -5,7 +5,7 @@ import { contactFaqs } from '@/lib/faqs'
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Odovey Consulting about building and deploying agentic AI solutions and platforms, team enablement, or corporate training. We typically respond within 24 hours.',
+  description: "Get in touch with O'Dovey AI about building and deploying agentic AI solutions and platforms, team enablement, or corporate training. We typically respond within 24 hours.",
   alternates: {
     canonical: '/contact/',
   },

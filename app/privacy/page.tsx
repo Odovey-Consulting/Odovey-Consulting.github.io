@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Odovey Consulting. Learn how we handle your information when you use our website and contact form.',
+  description: "Privacy Policy for O'Dovey AI. Learn how we handle your information when you use our website and contact form.",
   alternates: {
     canonical: '/privacy/',
   },
@@ -29,13 +29,13 @@ export default function PrivacyPolicy() {
 
       <section className="section-padding">
         <div className="container-max max-w-3xl">
-          <p className="text-sm text-gray-500 mb-8">Effective Date: February 7, 2026</p>
+          <p className="text-sm text-gray-500 mb-8">Effective Date: October 14, 2026</p>
 
           <div className="prose prose-gray max-w-none space-y-8">
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Who We Are</h2>
               <p className="text-gray-600">
-                Odovey Consulting is a trade name of Chasing Cloud Careers LLC, a professional services company specializing in building and deploying agentic AI solutions and in corporate training. Our website is <strong>odovey.com</strong>.
+                O&apos;Dovey AI is a trade name of O&apos;Dovey Ventures LLC, a Texas limited liability company specializing in building and deploying agentic AI solutions and in corporate training. Our website is <strong>odovey.com</strong>.
               </p>
             </div>
 
@@ -84,7 +84,7 @@ export default function PrivacyPolicy() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Data Sharing</h2>
               <p className="text-gray-600">
-                We do not sell, rent, or share your personal information with any third parties. Your information is only used to respond to your inquiry and is not disclosed to anyone outside of Odovey Consulting.
+                We do not sell, rent, or share your personal information with any third parties. Your information is only used to respond to your inquiry and is not disclosed to anyone outside of O&apos;Dovey AI.
               </p>
             </div>
 

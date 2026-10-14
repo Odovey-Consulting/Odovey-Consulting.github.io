@@ -156,7 +156,7 @@ export default function Services() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'ProfessionalService',
-          name: 'Odovey Consulting',
+          name: "O'Dovey AI",
           url: 'https://odovey.com/services/',
           description,
           hasOfferCatalog: {

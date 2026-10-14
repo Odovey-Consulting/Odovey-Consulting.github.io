@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with this repositor
 
 ## Repository Overview
 
-The Odovey Consulting website is a statically generated marketing site for an agentic AI professional services firm of forward deployed engineers (build & deploy, enable, train), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
+The O'Dovey AI website is a statically generated marketing site for an agentic AI professional services firm of forward deployed engineers (build & deploy, enable, train), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
 
 ## Tech Stack
 

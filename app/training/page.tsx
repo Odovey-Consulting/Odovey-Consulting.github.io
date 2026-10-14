@@ -104,7 +104,7 @@ export default function Training() {
               description: p.description,
               provider: {
                 '@type': 'Organization',
-                name: 'Odovey Consulting',
+                name: "O'Dovey AI",
                 url: 'https://odovey.com',
               },
             },

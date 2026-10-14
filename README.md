@@ -1,6 +1,6 @@
-# Odovey Consulting Website
+# O'Dovey AI Website
 
-Corporate website for [Odovey Consulting](https://odovey.com) — a professional services firm of forward deployed engineers that builds and deploys agentic AI solutions and platforms.
+Corporate website for [O'Dovey AI](https://odovey.com) — a professional services firm of forward deployed engineers that builds and deploys agentic AI solutions and platforms.
 
 ## Tech Stack
 
@@ -53,4 +53,4 @@ The site is statically exported and deployed to GitHub Pages via the workflow in
 
 ## License
 
-Proprietary — Odovey Consulting.
+Proprietary — O'Dovey Ventures LLC d/b/a O'Dovey AI.

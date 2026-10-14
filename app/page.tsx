@@ -31,7 +31,7 @@ export default function Home() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'Organization',
-          name: 'Odovey Consulting',
+          name: "O'Dovey AI",
           url: 'https://odovey.com',
           logo: 'https://odovey.com/images/logo.png',
           description: 'Professional services firm of forward deployed engineers who build and deploy agentic AI solutions and platforms for organizations, enable their teams, and deliver corporate training.',
@@ -53,7 +53,7 @@ export default function Home() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'WebSite',
-          name: 'Odovey Consulting',
+          name: "O'Dovey AI",
           url: 'https://odovey.com',
         }}
       />
@@ -70,7 +70,7 @@ export default function Home() {
               <span className="text-primary-600 block">Agentic Solutions</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Odovey Consulting is a professional services firm of forward deployed engineers. We embed with your team, build the agents and platforms your organization needs, deploy them into your environment, and make sure your people can run them.
+              O&apos;Dovey AI is a professional services firm of forward deployed engineers. We embed with your team, build the agents and platforms your organization needs, deploy them into your environment, and make sure your people can run them.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg px-8 py-4">
