@@ -6,7 +6,11 @@ import { JsonLd } from '@/components/JsonLd'
 import type { Metadata } from 'next'
 
 export function generateStaticParams() {
-  return getAllPostSlugs().map((slug) => ({ slug }))
+  const slugs = getAllPostSlugs()
+  // Static export fails on an empty list (e.g. every post is a draft), so emit
+  // one placeholder that renders the 404 page and is never linked or listed.
+  if (slugs.length === 0) return [{ slug: '_' }]
+  return slugs.map((slug) => ({ slug }))
 }
 
 export async function generateMetadata({

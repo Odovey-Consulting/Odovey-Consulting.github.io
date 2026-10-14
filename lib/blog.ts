@@ -35,12 +35,7 @@ function slugFromFilename(filename: string): string {
 }
 
 export function getAllPostSlugs(): string[] {
-  if (!fs.existsSync(POSTS_DIRECTORY)) return []
-
-  return fs
-    .readdirSync(POSTS_DIRECTORY)
-    .filter((file) => file.endsWith('.md'))
-    .map(slugFromFilename)
+  return getAllPosts().map((post) => post.slug)
 }
 
 export function getAllPosts(): BlogPostMeta[] {
