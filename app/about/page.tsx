@@ -3,7 +3,7 @@ import { Users, Target, Award, Lightbulb, Globe, Rocket, Check } from 'lucide-re
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Odovey Consulting, an agentic AI consultancy that helps organizations build AI agents and agent platforms and trains their people to own them.',
+  description: 'Odovey Consulting is a harness engineering consultancy. We build the body around the model: agentic solutions and agent platforms that run in production. We also teach teams to build them.',
   alternates: {
     canonical: '/about/',
   },
@@ -22,7 +22,7 @@ export default function About() {
               <span className="text-primary-600 block">Odovey Consulting</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              We are an agentic AI consultancy. We help organizations build AI agents that do real work, and we teach their people to build, run, and govern those agents themselves.
+              We are a harness engineering consultancy. Every AI agent is a model inside a harness, and we build harnesses: the agentic solutions and platforms that let models do real work. We also teach teams to build their own.
             </p>
           </div>
         </div>
@@ -38,7 +38,7 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6">
-                To help organizations move from AI experiments to agents that run in production, delivering measurable outcomes safely and at a cost that makes sense.
+                To help organizations move from AI experiments to production agents by engineering the part that decides whether agents work: the harness.
               </p>
               <p className="text-gray-600">
                 We measure success by what your team can do after we leave, not just by what we deliver while we are there.
@@ -51,10 +51,10 @@ export default function About() {
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Our Vision</h2>
               <p className="text-lg text-gray-600 mb-6">
-                A future where every organization can confidently put AI agents to work alongside its people, with the skills, platforms, and guardrails to do it well.
+                A future where harness engineering is a normal engineering discipline that every organization can practice, with clear primitives, shared patterns, and evaluations that show what works.
               </p>
               <p className="text-gray-600">
-                Agentic AI is moving fast. We cut through the noise so our clients invest in patterns that last.
+                Models change every few months. The harness primitives don&apos;t. We help clients invest in what lasts.
               </p>
             </div>
           </div>
@@ -80,7 +80,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Production Over Prototypes</h3>
               <p className="text-gray-600">
-                We build for reliability, security, and observability from the start, because agents that never leave the demo stage don&apos;t create value.
+                We answer the hard production questions from day one: persistence, security, observability, resilience, performance, and evaluation. Agents that never leave the demo stage don&apos;t create value.
               </p>
             </div>
             
@@ -90,7 +90,7 @@ export default function About() {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">Teach, Don&apos;t Gatekeep</h3>
               <p className="text-gray-600">
-                Knowledge transfer is part of every engagement. We want you to be independent of us, not dependent on us.
+                We teach harness engineering in the open, and knowledge transfer is part of every engagement. We want you to be independent of us.
               </p>
             </div>
             
@@ -126,7 +126,7 @@ export default function About() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Discover</h3>
               <p className="text-gray-600 text-sm">
-                Understand the workflow, the outcome you want, and whether an agent is the right fit.
+                Start from what the agent should do, pick a model that fits, and shape the harness around it.
               </p>
             </div>
 
@@ -136,7 +136,7 @@ export default function About() {
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Build</h3>
               <p className="text-gray-600 text-sm">
-                Deliver working agents in short iterations, measured against real data and systems.
+                Build the harness primitive by primitive and evaluate each version against real tasks.
               </p>
             </div>
 
@@ -167,8 +167,8 @@ export default function About() {
                     <Check className="h-3.5 w-3.5 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Agentic AI Focus</h3>
-                    <p className="text-gray-600">Agents are all we do. That focus means deep, current expertise in agent architectures, tooling, evaluation, and security.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Harness Engineering Focus</h3>
+                    <p className="text-gray-600">We work on the body of the agent: input, context, model interface, output, and control flow. That focus is what gets agents from a demo to production.</p>
                   </div>
                 </div>
                 
@@ -178,7 +178,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Builders Who Teach</h3>
-                    <p className="text-gray-600">The people who train your teams are the same people who build agent systems, so the training reflects real-world practice.</p>
+                    <p className="text-gray-600">We wrote an open Harness Engineering curriculum, and the people who build your harnesses are the same people who teach it.</p>
                   </div>
                 </div>
 
@@ -188,7 +188,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Platform Foundations</h3>
-                    <p className="text-gray-600">Our background in cloud and platform engineering means your agents are built on infrastructure that is secure, observable, and able to scale.</p>
+                    <p className="text-gray-600">Our background in cloud and platform engineering means your harnesses run on infrastructure that is secure, observable, and able to scale.</p>
                   </div>
                 </div>
 
@@ -198,7 +198,7 @@ export default function About() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Vendor-Neutral</h3>
-                    <p className="text-gray-600">We don&apos;t resell models or platforms, so our recommendations are based on what fits your needs.</p>
+                    <p className="text-gray-600">We don&apos;t resell models or platforms. We pick the model that fits the work and build the harness so you can swap models later.</p>
                   </div>
                 </div>
               </div>

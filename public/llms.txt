@@ -1,37 +1,42 @@
 # Odovey Consulting
 
-> Agentic AI consultancy. We help organizations design and build AI agents and agent platforms, enable their engineering teams through co-build and coaching, and deliver corporate training on agentic AI.
+> Harness engineering consultancy for agentic AI. Every AI agent is a model inside a harness: the model is the mind, the harness is the body. We build harnesses, from purpose-built agents to agent platforms, enable engineering teams through co-build and advisory, and train teams in harness engineering.
 
 ## About
 
-Odovey Consulting helps organizations move from AI experiments to AI agents that run in production. We build agentic solutions and platforms, and we teach client teams to build, operate, and govern agents themselves. We are vendor-neutral and do not resell models or platforms. Based in Houston, Texas; engagements are delivered remotely or on-site.
+Odovey Consulting focuses on harness engineering: designing, building, evaluating, and hardening the harness around a model. A harness reduces to five primitives: Input (captures what comes in), Context (assembles what the model is shown), Model interface (requests a response from the model), Output (handles the model's outputs), and Control flow (defines the shape of the loop). Getting a harness ready for production means asking six questions of every primitive, covering persistence, safety and security, observability, resilience, performance, and evaluation.
+
+We are vendor-neutral and do not resell models or platforms. Our training is based on the open Harness Engineering curriculum: https://github.com/averagejoeslab/harness-engineering
+
+Based in Houston, Texas; engagements are delivered remotely or on-site.
 
 ## Services
 
-### Advisory & Strategy
-- Agentic AI Strategy & Use-Case Discovery: Identify and prioritize where agents create real value
-- Agent Readiness Assessment: Evaluate data, systems, security, and skills before agents act
-- AI Governance & Operating Model: Approval, autonomy, and ownership policies for agents at scale
+### Advisory
+- Agent Strategy & Use-Case Design: define the work, select models suited to it, design the harness around them
+- Harness Assessment: review existing agents against the five primitives and six production questions
+- Agent Governance & Operating Model: autonomy, approval, and ownership policies
 
 ### Build
-- Custom Agent Development: Single-task agents through multi-agent systems with human-in-the-loop flows
-- Agent Platform Engineering: Model gateway, agent runtime, memory, templates, and self-service developer experience
-- Tool & System Integrations: Model Context Protocol (MCP) servers, API and data connectors, retrieval
-- Agent Security & Guardrails: Least-privilege tool access, guardrails, threat modeling, red teaming
-- Evaluation, Observability & AgentOps: Evaluation suites, tracing, cost and latency optimization
+- Purpose-Built Agent Harnesses: single and multi-agent harnesses with human-in-the-loop control flow
+- Agent Platform Engineering: shared harness foundation, model gateway, sandboxed execution, developer experience
+- Context Engineering: instructions, persistent memory, retrieval, context window management
+- Tools & Integrations: tool design, Model Context Protocol (MCP) servers, API and data connectors
+- Production Hardening: persistence, security, observability, resilience, performance
+- Agent Evaluation: task suites with known right answers, outcome-based checks, regression gates
 
 ### Enable
-- Co-Build Engagements: Build alongside client engineers on a real use case
-- Technical Coaching & Advisory: Architecture reviews, design office hours, code reviews
-- AI Center of Excellence: Standards, reference architectures, and internal adoption
+- Co-Build Engagements: build a harness alongside client engineers on a real use case
+- Harness Engineering Advisory: architecture reviews, design office hours, code reviews
+- Agent Platform Team Setup: charter, reference architectures, internal standards
 
-### Corporate Training
-- Agentic AI for Leaders: Half-day executive briefing
-- Building AI Agents: 2–3 day hands-on developer bootcamp
-- Agent Platform Engineering: 2-day workshop for platform, DevOps, and SRE teams
-- Securing AI Agents: 1-day workshop for security and risk teams
-- Working with AI Agents: Workshop for business and operations teams
-- Custom Programs: Tailored curricula delivered on-site or live virtual
+### Training
+- Harness Engineering Bootcamp: 2–3 days, build a harness from scratch one primitive at a time
+- Production Harness Engineering: 2-day workshop on the six production questions
+- Agent Platform Engineering: 1–2 day workshop
+- Evaluating Agents: 1-day workshop
+- What Agents Are Made Of: half-day executive briefing
+- Custom Programs: tailored, on-site or live virtual
 
 ## Pages
 

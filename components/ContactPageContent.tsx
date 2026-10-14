@@ -33,7 +33,7 @@ export default function ContactPageContent() {
               <span className="text-primary-600 block">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Whether you want to build an agent, stand up an agent platform, or train your team, let&apos;s start the conversation.
+              Whether you need an agent harness built, an agent platform stood up, or your team trained in harness engineering, let&apos;s start the conversation.
             </p>
           </div>
         </div>

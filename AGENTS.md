@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with this repositor
 
 ## Repository Overview
 
-The Odovey Consulting website is a statically generated marketing site for an agentic AI consultancy (build, enable, and train), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
+The Odovey Consulting website is a statically generated marketing site for a harness engineering / agentic AI consultancy (build, enable, and train), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
 
 ## Tech Stack
 
@@ -50,7 +50,8 @@ components/             Reusable React components
 └── JsonLd.tsx          Structured data helper
 lib/
 ├── blog.ts             Blog post fetching and Markdown processing
-└── faqs.ts             Contact FAQ data (shared by page and JSON-LD)
+├── faqs.ts             Contact FAQ data (shared by page and JSON-LD)
+└── harness.ts          Harness primitives & production questions (shared copy)
 content/blog/           Blog content (fetched at build, gitignored)
 scripts/
 └── fetch-content.sh    Clones odovey-blog repo into content/blog

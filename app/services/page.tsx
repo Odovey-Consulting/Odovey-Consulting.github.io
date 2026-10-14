@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
   Compass,
+  FileText,
   ClipboardCheck,
   Scale,
   Bot,
@@ -17,10 +18,10 @@ import {
 } from 'lucide-react'
 import { JsonLd } from '@/components/JsonLd'
 
-const description = 'Agentic AI professional services: strategy and use-case discovery, custom AI agent development, agent platform engineering, integrations, security, and evaluation, plus team enablement and co-build engagements.'
+const description = 'Harness engineering services for agentic AI: agent strategy, harness assessments, purpose-built agent harnesses, agent platform engineering, context engineering, tools and integrations, production hardening, evaluation, and team enablement.'
 
 export const metadata: Metadata = {
-  title: 'Agentic AI Consulting Services',
+  title: 'Harness Engineering & Agentic AI Services',
   description,
   alternates: {
     canonical: '/services/',
@@ -38,54 +39,60 @@ export default function Services() {
   const advisoryServices: Service[] = [
     {
       icon: Compass,
-      title: "Agentic AI Strategy & Use-Case Discovery",
-      description: "Identify where agents create real value in your business, and where they don't, then prioritize a roadmap you can execute.",
-      features: ["Use-case workshops", "Value & feasibility scoring", "Build vs. buy analysis", "Prioritized roadmap"]
+      title: "Agent Strategy & Use-Case Design",
+      description: "Start from what you want the agent to do. We define the work, pick models suited to it, and shape the harness around them.",
+      features: ["Use-case discovery & prioritization", "Model research & selection", "Harness architecture design", "Build vs. buy analysis"]
     },
     {
       icon: ClipboardCheck,
-      title: "Agent Readiness Assessment",
-      description: "Evaluate your data, systems, APIs, security posture, and skills to understand what must be true before agents can safely act.",
-      features: ["Data & API readiness", "Platform gap analysis", "Skills assessment", "Risk register"]
+      title: "Harness Assessment",
+      description: "Already have agents? We review your harness against the five primitives and the six production questions, and tell you what will break first.",
+      features: ["Primitive-by-primitive review", "Production readiness scorecard", "Risk & cost findings", "Prioritized remediation plan"]
     },
     {
       icon: Scale,
-      title: "AI Governance & Operating Model",
-      description: "Define how agents are approved, monitored, and owned so you can scale adoption without losing control.",
-      features: ["Autonomy & approval policies", "Responsible AI guidelines", "Ownership & support model", "Compliance mapping"]
+      title: "Agent Governance & Operating Model",
+      description: "Decide what agents may do on their own, what needs a human, and who owns them, so adoption can scale without losing control.",
+      features: ["Autonomy & approval policies", "Ownership & support model", "Responsible AI guidelines", "Compliance mapping"]
     }
   ]
 
   const buildServices: Service[] = [
     {
       icon: Bot,
-      title: "Custom Agent Development",
-      description: "Design and ship AI agents that reason, plan, and take action across your workflows, from single-task assistants to multi-agent systems.",
-      features: ["Agent & workflow design", "Multi-agent orchestration", "Human-in-the-loop flows", "Production hardening"]
+      title: "Purpose-Built Agent Harnesses",
+      description: "We engineer the body around the model, covering input, context, model interface, output, and control flow, for agents that do real work in your systems.",
+      features: ["Single & multi-agent designs", "Human-in-the-loop control flow", "Long-running & background agents", "Model-agnostic interfaces"]
     },
     {
       icon: Layers,
       title: "Agent Platform Engineering",
-      description: "Build the shared foundation your teams use to create, deploy, and operate agents consistently across the organization.",
-      features: ["Model gateway & routing", "Agent runtime & memory", "Reusable templates", "Self-service developer experience"]
+      description: "A shared harness foundation, so every team builds agents the same way and the tenth agent is far cheaper than the first.",
+      features: ["Model gateway & routing", "Reusable harness components", "Sandboxed execution environments", "Self-service developer experience"]
+    },
+    {
+      icon: FileText,
+      title: "Context Engineering",
+      description: "What the model is shown determines what it does. We design instructions, memory, and retrieval so agents know what they are and stay effective on long tasks.",
+      features: ["System instructions & agent specs", "Persistent memory design", "Retrieval & knowledge access", "Context window management"]
     },
     {
       icon: Plug,
-      title: "Tool & System Integrations",
-      description: "Connect agents to the systems where work actually happens, using standard protocols and well-scoped interfaces.",
-      features: ["Model Context Protocol (MCP) servers", "API & data connectors", "Retrieval & knowledge access", "Legacy system integration"]
+      title: "Tools & Integrations",
+      description: "Give agents a way to act, through tools that are well-scoped, well-described, and safe to call against real systems.",
+      features: ["Tool design & interfaces", "Model Context Protocol (MCP) servers", "API & data connectors", "Legacy system integration"]
     },
     {
       icon: ShieldCheck,
-      title: "Agent Security & Guardrails",
-      description: "Protect against prompt injection, data leakage, and overreach with defense-in-depth controls designed for autonomous systems.",
-      features: ["Least-privilege tool access", "Identity & secrets handling", "Input/output guardrails", "Threat modeling & red teaming"]
+      title: "Production Hardening",
+      description: "We answer the six production questions for every primitive: persistence, security, observability, resilience, performance, and evaluation.",
+      features: ["Sandboxing & least privilege", "Tracing & audit trails", "Timeouts, retries & recovery", "Caching & cost control"]
     },
     {
       icon: Activity,
-      title: "Evaluation, Observability & AgentOps",
-      description: "Know whether your agents work. Measure quality, trace every step, and keep cost and latency under control in production.",
-      features: ["Evaluation suites & benchmarks", "Tracing & monitoring", "Cost & latency optimization", "Release & regression gates"]
+      title: "Agent Evaluation",
+      description: "Evaluate by what the agent actually did, not what it says. Task suites with known right answers show you whether a change made things better or worse.",
+      features: ["Task suites & graders", "Outcome-based checks", "Regression gates in CI", "Model comparison"]
     }
   ]
 
@@ -93,20 +100,20 @@ export default function Services() {
     {
       icon: Users,
       title: "Co-Build Engagements",
-      description: "We build alongside your engineers on a real use case, so you leave with a working agent and a team that knows how to build the next one.",
+      description: "We build a harness alongside your engineers on a real use case. You leave with a working agent and a team that knows how to build the next one.",
       features: ["Pair programming", "Shared delivery backlog", "Knowledge transfer plan", "Handover documentation"]
     },
     {
       icon: MessageSquare,
-      title: "Technical Coaching & Advisory",
-      description: "Ongoing access to senior agentic AI expertise for architecture reviews, design decisions, and unblocking your teams.",
-      features: ["Architecture reviews", "Design office hours", "Code & prompt reviews", "Technology selection guidance"]
+      title: "Harness Engineering Advisory",
+      description: "Ongoing access to senior harness engineering expertise for design decisions, reviews, and unblocking your teams.",
+      features: ["Architecture reviews", "Design office hours", "Code & prompt reviews", "Model & framework guidance"]
     },
     {
       icon: Building2,
-      title: "AI Center of Excellence",
-      description: "Stand up an internal team that sets standards, curates reusable components, and helps the rest of the organization adopt agents.",
-      features: ["CoE charter & structure", "Standards & reference architectures", "Internal community building", "Adoption metrics"]
+      title: "Agent Platform Team Setup",
+      description: "Stand up the internal team that owns your agent platform, sets harness standards, and helps the rest of the organization build agents.",
+      features: ["Team charter & structure", "Reference harness architectures", "Internal standards & templates", "Adoption metrics"]
     }
   ]
 
@@ -116,7 +123,7 @@ export default function Services() {
     {
       id: 'advisory',
       title: 'Advisory & Strategy',
-      subtitle: 'Decide where agents belong and what it takes to get there.',
+      subtitle: 'Know what the agent should do, which model fits, and what harness it needs.',
       icon: Compass,
       services: advisoryServices,
       background: '',
@@ -125,7 +132,7 @@ export default function Services() {
     {
       id: 'build',
       title: 'Build',
-      subtitle: 'Production-grade agents and the platform that lets you scale them.',
+      subtitle: 'Harnesses and platforms built for production, not demos.',
       icon: Bot,
       services: buildServices,
       background: 'bg-gray-50',
@@ -134,7 +141,7 @@ export default function Services() {
     {
       id: 'enable',
       title: 'Enable',
-      subtitle: 'Grow the in-house capability to build and run agents without us.',
+      subtitle: 'Grow your own harness engineering team so you don\'t depend on us.',
       icon: Users,
       services: enableServices,
       background: '',
@@ -153,7 +160,7 @@ export default function Services() {
           description,
           hasOfferCatalog: {
             '@type': 'OfferCatalog',
-            name: 'Agentic AI Services',
+            name: 'Harness Engineering Services',
             itemListElement: allServices.map((s) => ({
               '@type': 'Offer',
               itemOffered: {
@@ -171,11 +178,11 @@ export default function Services() {
         <div className="relative container-max section-padding">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Agentic AI
-              <span className="text-primary-600 block">Professional Services</span>
+              Harness Engineering
+              <span className="text-primary-600 block">Services</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              From the first use case to an enterprise agent platform, we help you plan, build, secure, and operate AI agents, and leave your team able to do it themselves.
+              An agent is a model inside a harness. We design, build, and harden harnesses, from your first agent to an enterprise agent platform, and teach your team to do it themselves.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               {sections.map((section) => (
@@ -239,7 +246,7 @@ export default function Services() {
             <div className="flex-grow text-center md:text-left">
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Looking for Corporate Training?</h2>
               <p className="text-gray-600">
-                We offer executive briefings, hands-on developer bootcamps, and workshops for business teams, delivered on-site or virtually.
+                Our harness engineering bootcamps take engineers from a bare model to a production-ready agent, one primitive at a time. Delivered on-site or virtually.
               </p>
             </div>
             <Link href="/training" className="btn-primary flex-shrink-0">
@@ -264,10 +271,10 @@ export default function Services() {
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { title: 'Discover', text: 'Clarify the business outcome, map the workflow, and confirm an agent is the right tool for the job.' },
-              { title: 'Design', text: 'Define the agent architecture, tools, guardrails, and evaluation criteria before writing production code.' },
-              { title: 'Build', text: 'Deliver in short iterations against real data and systems, measuring quality at every step.' },
-              { title: 'Enable', text: 'Hand over the code, runbooks, and know-how so your team can operate and extend what we built.' },
+              { title: 'Define', text: 'Start from what the agent should do. Map the work, set success criteria, and confirm an agent is the right tool.' },
+              { title: 'Design', text: 'Pick models that fit the work, then shape the harness around them, primitive by primitive.' },
+              { title: 'Build & Evaluate', text: 'Build iteratively and measure each version against a task suite with known right answers.' },
+              { title: 'Harden & Hand Over', text: 'Answer the six production questions, then hand over the code, runbooks, and know-how.' },
             ].map((step, index) => (
               <div key={step.title} className="text-center">
                 <div className="w-16 h-16 bg-primary-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
@@ -288,7 +295,7 @@ export default function Services() {
             Ready to Get Started?
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Tell us about the workflow you want to automate or the team you want to upskill. We&apos;ll propose a practical first step.
+            Tell us what you want your agents to do, or which team you want to upskill. We&apos;ll propose a practical first step.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact" className="inline-flex items-center justify-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors">

@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
             <div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Who We Are</h2>
               <p className="text-gray-600">
-                Odovey Consulting is a trade name of Chasing Cloud Careers LLC, a professional services company specializing in agentic AI consulting and training. Our website is <strong>odovey.com</strong>.
+                Odovey Consulting is a trade name of Chasing Cloud Careers LLC, a professional services company specializing in harness engineering for agentic AI: consulting, platform engineering, and training. Our website is <strong>odovey.com</strong>.
               </p>
             </div>
 

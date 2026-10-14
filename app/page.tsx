@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { ArrowRight, Bot, Layers, GraduationCap, ShieldCheck, Gauge, Users, CheckCircle } from 'lucide-react'
+import { ArrowRight, Brain, Bot, Users, GraduationCap, CheckCircle, BookOpen } from 'lucide-react'
 import { JsonLd } from '@/components/JsonLd'
+import { HARNESS_ENGINEERING_REPO, harnessPrimitives, productionQuestions } from '@/lib/harness'
 
 export const metadata: Metadata = {
   alternates: {
@@ -19,7 +20,7 @@ export default function Home() {
           name: 'Odovey Consulting',
           url: 'https://odovey.com',
           logo: 'https://odovey.com/images/logo.png',
-          description: 'Agentic AI consultancy that helps organizations build AI agents and agent platforms, upskill their teams, and deliver corporate training on agentic AI.',
+          description: 'Harness engineering consultancy. We build agentic solutions and agent platforms, enable engineering teams, and deliver corporate training on harness engineering.',
           contactPoint: {
             '@type': 'ContactPoint',
             email: 'sales@odovey.com',
@@ -47,12 +48,15 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50 to-secondary-50"></div>
         <div className="relative container-max section-padding">
           <div className="text-center">
+            <p className="text-sm font-semibold uppercase tracking-wider text-primary-600 mb-4">
+              Harness Engineering for Agentic AI
+            </p>
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Put AI Agents to Work
-              <span className="text-primary-600 block">In Your Organization</span>
+              The Model Is the Mind.
+              <span className="text-primary-600 block">We Build the Body.</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Odovey Consulting is an agentic AI consultancy. We design and build production-ready AI agents and agent platforms, and we teach your people to build, run, and govern them on their own.
+              Every AI agent is a model inside a harness. The harness decides what the model sees, what it can do, and when it stops. We engineer harnesses and the platforms that run them, and we teach your engineers to do the same.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/contact" className="btn-primary text-lg px-8 py-4">
@@ -67,141 +71,168 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Three Pillars */}
+      {/* What is harness engineering */}
       <section className="section-padding">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Three Ways We Help
+              What Is Harness Engineering?
             </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Engage us to build, to upskill your team while we build together, or to train your workforce. Most clients combine all three.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              An agent observes, thinks, and acts, then repeats. The model does the thinking. Everything else is the harness, and that is where most agents succeed or fail.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
+                <Brain className="h-6 w-6 text-secondary-600" />
+              </div>
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">The Model: the Mind</h3>
+              <p className="text-gray-600 mb-4">
+                Tokens in, tokens out. A model predicts what comes next, and that&apos;s all. It can&apos;t capture its own inputs, take action, or decide when the work is done.
+              </p>
+              <p className="text-gray-600">
+                Models improve and change constantly. Choose one that fits the work, and plan to swap it later.
+              </p>
+            </div>
+
+            <div className="lg:col-span-2 bg-white p-8 rounded-xl shadow-sm border-2 border-primary-200">
               <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
                 <Bot className="h-6 w-6 text-primary-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Build</h3>
-              <p className="text-gray-600 mb-4">
-                We design and deliver agentic solutions, from a single high-value agent to an enterprise agent platform that your teams can build on.
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">The Harness: the Body</h3>
+              <p className="text-gray-600 mb-6">
+                The harness does everything else. Every agent, from a coding assistant to a customer-facing workflow, reduces to the same five primitives. Agents differ in how each one is built.
               </p>
-              <ul className="space-y-2 mb-6">
-                {['Custom AI agents & multi-agent workflows', 'Agent platform engineering', 'Tool & system integrations'].map((item) => (
-                  <li key={item} className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                    {item}
-                  </li>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {harnessPrimitives.map((primitive) => (
+                  <div key={primitive.name} className="rounded-lg bg-gray-50 p-4">
+                    <p className="font-semibold text-gray-900">{primitive.name}</p>
+                    <p className="text-sm text-gray-600">{primitive.role}</p>
+                  </div>
                 ))}
-              </ul>
-              <Link href="/services" className="mt-auto text-primary-600 hover:text-primary-700 font-medium">
-                Build services →
-              </Link>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
-              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-secondary-600" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Enable</h3>
-              <p className="text-gray-600 mb-4">
-                We embed with your engineers, pairing on real work so the capability stays with your team after we leave.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {['Co-build engagements', 'Technical coaching & architecture reviews', 'AI center of excellence setup'].map((item) => (
-                  <li key={item} className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/services" className="mt-auto text-primary-600 hover:text-primary-700 font-medium">
-                Enablement services →
-              </Link>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <GraduationCap className="h-6 w-6 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Train</h3>
-              <p className="text-gray-600 mb-4">
-                We run corporate training on agentic AI for every audience, from executive briefings to hands-on engineering bootcamps.
-              </p>
-              <ul className="space-y-2 mb-6">
-                {['Executive & leadership briefings', 'Hands-on developer bootcamps', 'Workshops for business teams'].map((item) => (
-                  <li key={item} className="flex items-center text-sm text-gray-600">
-                    <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
-                    {item}
-                  </li>
-                ))}
-              </ul>
-              <Link href="/training" className="mt-auto text-primary-600 hover:text-primary-700 font-medium">
-                Training programs →
-              </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Us */}
+      {/* Three Pillars */}
       <section className="section-padding bg-gray-50">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Agents That Make It to Production
+              How We Help
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Demos are easy. Reliable, secure, cost-controlled agents running against real systems are not. That is where we focus.
+              We build harnesses for you, build them with you, or teach your team to build them. Most clients do all three.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center mb-4">
-                <Layers className="h-6 w-6 text-primary-600" />
+            {[
+              {
+                icon: Bot,
+                iconClass: 'bg-primary-100 text-primary-600',
+                title: 'Build',
+                text: 'We design and deliver agentic solutions, from a single purpose-built agent to a shared agent platform your teams build on.',
+                items: ['Purpose-built agent harnesses', 'Agent platform engineering', 'Production readiness reviews'],
+                href: '/services#build',
+                cta: 'Build services',
+              },
+              {
+                icon: Users,
+                iconClass: 'bg-secondary-100 text-secondary-600',
+                title: 'Enable',
+                text: 'We embed with your engineers and pair on real harness work, so the skills stay with your team after we leave.',
+                items: ['Co-build engagements', 'Architecture & harness reviews', 'Internal agent platform teams'],
+                href: '/services#enable',
+                cta: 'Enablement services',
+              },
+              {
+                icon: GraduationCap,
+                iconClass: 'bg-green-100 text-green-600',
+                title: 'Train',
+                text: 'We run corporate training on harness engineering, from leadership briefings to hands-on bootcamps where engineers build a harness from scratch.',
+                items: ['Harness engineering bootcamps', 'Production harness workshops', 'Executive briefings'],
+                href: '/training',
+                cta: 'Training programs',
+              },
+            ].map((pillar) => (
+              <div key={pillar.title} className="bg-white p-8 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition-shadow flex flex-col">
+                <div className={`w-12 h-12 rounded-lg flex items-center justify-center mb-4 ${pillar.iconClass}`}>
+                  <pillar.icon className="h-6 w-6" />
+                </div>
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">{pillar.title}</h3>
+                <p className="text-gray-600 mb-4">{pillar.text}</p>
+                <ul className="space-y-2 mb-6">
+                  {pillar.items.map((item) => (
+                    <li key={item} className="flex items-center text-sm text-gray-600">
+                      <CheckCircle className="h-4 w-4 text-green-500 mr-2 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+                <Link href={pillar.href} className="mt-auto text-primary-600 hover:text-primary-700 font-medium">
+                  {pillar.cta} →
+                </Link>
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Platform Thinking</h3>
-              <p className="text-gray-600">
-                We build shared foundations, including model access, tool connectivity, and memory, so your second agent costs a fraction of your first.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
-                <ShieldCheck className="h-6 w-6 text-green-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Secure by Design</h3>
-              <p className="text-gray-600">
-                Least-privilege tool access, human-in-the-loop approvals, guardrails, and audit trails are part of the architecture from day one.
-              </p>
-            </div>
-
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
-              <div className="w-12 h-12 bg-secondary-100 rounded-lg flex items-center justify-center mb-4">
-                <Gauge className="h-6 w-6 text-secondary-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">Measured, Not Guessed</h3>
-              <p className="text-gray-600">
-                Evaluation suites, tracing, and cost monitoring show you whether your agents are actually working and what they cost.
-              </p>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Vendor-neutral */}
+      {/* Production readiness */}
       <section className="section-padding">
         <div className="container-max">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Vendor-Neutral by Default
+              From Demo to Production
             </h2>
-            <p className="text-xl text-gray-600">
-              We don&apos;t resell models or platforms. We help you choose the right models, frameworks, and infrastructure for your constraints, and we design so you can change them later without starting over.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              A working demo isn&apos;t a production agent. Getting there means asking six questions of every primitive in the harness. We build the answers into everything we deliver.
             </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {productionQuestions.map((item) => (
+              <div key={item.concern} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <p className="text-sm font-semibold uppercase tracking-wider text-primary-600 mb-2">{item.concern}</p>
+                <p className="text-lg font-medium text-gray-900">{item.question}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Model-agnostic + open curriculum */}
+      <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                Your Harness Is the Asset
+              </h2>
+              <p className="text-gray-600">
+                We don&apos;t resell models or platforms. Models will keep changing, but a well-built harness holds your tools, context, guardrails, and evaluations. We design it so you can swap the model without starting over.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+              <div className="flex items-center mb-4">
+                <BookOpen className="h-6 w-6 text-primary-600 mr-3" />
+                <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
+                  We Teach It in the Open
+                </h2>
+              </div>
+              <p className="text-gray-600 mb-4">
+                Our open Harness Engineering curriculum builds an agent one primitive at a time, evaluates it, and gets it ready for production. Read it before you hire us.
+              </p>
+              <a href={HARNESS_ENGINEERING_REPO} target="_blank" rel="noopener noreferrer" className="text-primary-600 hover:text-primary-700 font-medium">
+                Read the curriculum on GitHub →
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -210,10 +241,10 @@ export default function Home() {
       <section className="section-padding bg-primary-600">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Build Your First Agent, or Your Next Ten?
+            Let&apos;s Build the Body Your Agents Need
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
-            Tell us where you are. We&apos;ll suggest the fastest path to agents your organization trusts and can run.
+            Tell us what you want your agents to do. We&apos;ll show you the harness it takes, and the fastest path to running it in production.
           </p>
           <Link href="/contact" className="inline-flex items-center px-8 py-4 bg-white text-primary-600 font-semibold rounded-lg hover:bg-gray-50 transition-colors">
             Book a Discovery Call

@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import {
+  Activity,
+  BookOpen,
   Briefcase,
   Code,
-  Users,
   Layers,
   ShieldCheck,
   Presentation,
@@ -13,11 +14,12 @@ import {
   ArrowRight
 } from 'lucide-react'
 import { JsonLd } from '@/components/JsonLd'
+import { HARNESS_ENGINEERING_REPO } from '@/lib/harness'
 
-const description = 'Corporate training on agentic AI: executive briefings, hands-on developer bootcamps, platform and security workshops, and AI agent training for business teams. Delivered on-site or virtually and tailored to your organization.'
+const description = 'Corporate training in harness engineering: hands-on bootcamps where engineers build an AI agent harness from scratch, production and platform workshops, agent evaluation, and executive briefings. Delivered on-site or virtually.'
 
 export const metadata: Metadata = {
-  title: 'Agentic AI Corporate Training',
+  title: 'Harness Engineering Training',
   description,
   alternates: {
     canonical: '/training/',
@@ -36,52 +38,52 @@ type Program = {
 export default function Training() {
   const programs: Program[] = [
     {
-      icon: Briefcase,
-      title: 'Agentic AI for Leaders',
-      audience: 'Executives & senior leaders',
-      format: 'Half-day briefing',
-      description: 'A clear, hype-free view of what AI agents can and cannot do today, and how to lead an organization through adopting them.',
-      outcomes: ['Understand agent capabilities & limits', 'Spot high-value opportunities', 'Weigh risk, cost & governance', 'Leave with next steps for your org'],
-    },
-    {
       icon: Code,
-      title: 'Building AI Agents',
+      title: 'Harness Engineering Bootcamp',
       audience: 'Software engineers',
       format: '2–3 day hands-on bootcamp',
-      description: 'Engineers build working agents end-to-end: tool use, planning, memory, retrieval, multi-agent patterns, and evaluation.',
-      outcomes: ['Design agent architectures', 'Integrate tools via MCP & APIs', 'Write evaluations that catch regressions', 'Ship an agent to a real environment'],
+      description: 'Engineers build an agent harness from scratch, one primitive at a time: reach the model, take input, act through tools, loop, and give it context.',
+      outcomes: ['Understand what an agent is made of', 'Build all five harness primitives', 'Evaluate a harness against a task suite', 'Leave with a working agent'],
+    },
+    {
+      icon: ShieldCheck,
+      title: 'Production Harness Engineering',
+      audience: 'Senior engineers, platform & SRE teams',
+      format: '2-day workshop',
+      description: 'Take a working harness to production by asking six questions of every primitive: persistence, security, observability, resilience, performance, and evaluation.',
+      outcomes: ['Sandbox agent actions', 'Add memory that outlasts a session', 'Trace and audit what agents did', 'Control latency and cost'],
     },
     {
       icon: Layers,
       title: 'Agent Platform Engineering',
-      audience: 'Platform, DevOps & SRE teams',
-      format: '2-day workshop',
-      description: 'How to run agents at scale: model gateways, runtimes, observability, cost controls, and the developer experience on top.',
-      outcomes: ['Reference platform architecture', 'Tracing & monitoring for agents', 'Cost & capacity management', 'Self-service patterns for teams'],
+      audience: 'Platform & architecture teams',
+      format: '1–2 day workshop',
+      description: 'Turn one harness into a shared platform: reusable components, model routing, execution environments, and a developer experience other teams want to use.',
+      outcomes: ['Reference platform architecture', 'Reusable harness components', 'Model-agnostic interfaces', 'Self-service patterns for teams'],
     },
     {
-      icon: ShieldCheck,
-      title: 'Securing AI Agents',
-      audience: 'Security & risk teams',
+      icon: Activity,
+      title: 'Evaluating Agents',
+      audience: 'Engineers & QA teams',
       format: '1-day workshop',
-      description: 'The agent threat landscape and the controls that address it, from prompt injection to over-privileged tools.',
-      outcomes: ['Threat-model an agent system', 'Apply least-privilege tool access', 'Design guardrails & approvals', 'Plan red-team exercises'],
+      description: 'Judge agents by what they did, not what they said. Build task suites with known right answers and use them to compare models and catch regressions.',
+      outcomes: ['Design task suites & graders', 'Run evals in isolated environments', 'Compare models & harness versions', 'Gate releases on results'],
     },
     {
-      icon: Users,
-      title: 'Working with AI Agents',
-      audience: 'Business & operations teams',
-      format: 'Half-day or full-day workshop',
-      description: 'Non-technical staff learn to work effectively alongside agents and to identify and shape automation opportunities in their own work.',
-      outcomes: ['Use agents productively & safely', 'Map workflows for automation', 'Write effective instructions', 'Know when a human should decide'],
+      icon: Briefcase,
+      title: 'What Agents Are Made Of',
+      audience: 'Executives, product & business leaders',
+      format: 'Half-day briefing',
+      description: 'A plain-language, hype-free explanation of agents as a model plus a harness, and what that means for strategy, risk, cost, and team structure.',
+      outcomes: ['Separate the model from the harness', 'Spot where agents fit, and where they don\'t', 'Understand production risk & cost', 'Know what to ask your teams'],
     },
     {
       icon: Presentation,
       title: 'Custom Programs',
       audience: 'Any team',
       format: 'Tailored to you',
-      description: 'A program built around your use cases, tech stack, and policies, from a single lunch-and-learn to a multi-week curriculum.',
-      outcomes: ['Exercises using your scenarios', 'Aligned to your approved tools', 'Cohort-based learning paths', 'Follow-up office hours'],
+      description: 'A program built around your use cases, models, and policies, from a single lunch-and-learn to a multi-week cohort that ends with your own production agent.',
+      outcomes: ['Exercises using your scenarios', 'Aligned to your approved models & tools', 'Cohort-based learning paths', 'Follow-up office hours'],
     },
   ]
 
@@ -91,7 +93,7 @@ export default function Training() {
         data={{
           '@context': 'https://schema.org',
           '@type': 'ItemList',
-          name: 'Agentic AI Corporate Training Programs',
+          name: 'Harness Engineering Training Programs',
           description,
           itemListElement: programs.map((p, index) => ({
             '@type': 'ListItem',
@@ -115,11 +117,11 @@ export default function Training() {
         <div className="relative container-max section-padding">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Agentic AI
-              <span className="text-primary-600 block">Corporate Training</span>
+              Harness Engineering
+              <span className="text-primary-600 block">Training</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Practical training taught by practitioners who build agents for a living. Your people learn by doing, using scenarios drawn from your business.
+              Your engineers learn what an agent is made of by building one. They start from a bare model and add one primitive at a time until they have an agent that is evaluated and ready for production.
             </p>
             <Link href="/contact" className="btn-primary text-lg px-8 py-4">
               Plan a Training
@@ -137,7 +139,7 @@ export default function Training() {
               Training Programs
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              A program for every role involved in adopting agents. Each one can be tailored to your stack and use cases.
+              Programs for engineers who build agents and for leaders who decide where agents belong. Each one can be tailored to your stack and use cases.
             </p>
           </div>
 
@@ -167,8 +169,28 @@ export default function Training() {
         </div>
       </section>
 
-      {/* Delivery */}
+      {/* Open curriculum */}
       <section className="section-padding bg-gray-50">
+        <div className="container-max">
+          <div className="bg-white p-8 md:p-12 rounded-xl shadow-sm border border-gray-200 flex flex-col md:flex-row items-center gap-8">
+            <div className="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center flex-shrink-0">
+              <BookOpen className="h-8 w-8 text-primary-600" />
+            </div>
+            <div className="flex-grow text-center md:text-left">
+              <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Built on an Open Curriculum</h2>
+              <p className="text-gray-600">
+                Our training is based on Harness Engineering, a free, open curriculum that builds an agent primitive by primitive, evaluates it, and gets it ready for production. Corporate programs add instructor-led labs, your own use cases, and time with practitioners.
+              </p>
+            </div>
+            <a href={HARNESS_ENGINEERING_REPO} target="_blank" rel="noopener noreferrer" className="btn-secondary flex-shrink-0">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Delivery */}
+      <section className="section-padding">
         <div className="container-max">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -214,7 +236,7 @@ export default function Training() {
       <section className="section-padding bg-primary-600">
         <div className="container-max text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Upskill Your Team on Agentic AI
+            Teach Your Team Harness Engineering
           </h2>
           <p className="text-xl text-primary-100 mb-8 max-w-2xl mx-auto">
             Tell us who you want to train and what they need to be able to do. We&apos;ll recommend a program and format.

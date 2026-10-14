@@ -1,6 +1,6 @@
 # Odovey Consulting Website
 
-Corporate website for [Odovey Consulting](https://odovey.com) — an agentic AI consultancy offering agent development, platform engineering, team enablement, and corporate training.
+Corporate website for [Odovey Consulting](https://odovey.com) — a harness engineering consultancy that builds agentic solutions and agent platforms and trains teams to build them.
 
 ## Tech Stack
 
