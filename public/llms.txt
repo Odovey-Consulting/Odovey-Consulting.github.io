@@ -1,32 +1,44 @@
 # Odovey Consulting
 
-> Leading consultancy specializing in AI and cloud professional services. We help businesses scale, innovate, and succeed with cutting-edge technology solutions.
+> Agentic AI consultancy. We help organizations design and build AI agents and agent platforms, enable their engineering teams through co-build and coaching, and deliver corporate training on agentic AI.
 
 ## About
 
-Odovey Consulting is a forward-thinking consultancy dedicated to helping businesses harness the transformative power of artificial intelligence and cloud technology. We combine deep technical expertise with strategic business insight to deliver transformative results.
+Odovey Consulting helps organizations move from AI experiments to AI agents that run in production. We build agentic solutions and platforms, and we teach client teams to build, operate, and govern agents themselves. We are vendor-neutral and do not resell models or platforms. Based in Houston, Texas; engagements are delivered remotely or on-site.
 
 ## Services
 
-### Modern AI Solutions
-- AI Model Infrastructure: Enterprise-grade infrastructure for deploying and scaling transformer models
-- AI Agent Development: Intelligent agents powered by large language models for complex workflow automation
-- Supervised Fine-Tuning: Customize foundation models with LoRA, QLoRA, and domain adaptation techniques
-- RAG Implementation: Retrieval-Augmented Generation systems combining proprietary data with LLMs
-- Language & Vision Models: State-of-the-art transformer models for text, image, and multimodal applications
-- AI System Integrations: Seamless AI integration into existing systems with robust APIs
+### Advisory & Strategy
+- Agentic AI Strategy & Use-Case Discovery: Identify and prioritize where agents create real value
+- Agent Readiness Assessment: Evaluate data, systems, security, and skills before agents act
+- AI Governance & Operating Model: Approval, autonomy, and ownership policies for agents at scale
 
-### Cloud Services
-- Cloud Migration & Modernization: Seamless infrastructure migration with minimal downtime
-- Multi-Cloud Architecture: Robust multi-cloud strategies avoiding vendor lock-in
-- DevOps & Automation: Advanced CI/CD pipelines, infrastructure as code, and process automation
-- Performance & Cost Optimization: Intelligent resource management and performance tuning
+### Build
+- Custom Agent Development: Single-task agents through multi-agent systems with human-in-the-loop flows
+- Agent Platform Engineering: Model gateway, agent runtime, memory, templates, and self-service developer experience
+- Tool & System Integrations: Model Context Protocol (MCP) servers, API and data connectors, retrieval
+- Agent Security & Guardrails: Least-privilege tool access, guardrails, threat modeling, red teaming
+- Evaluation, Observability & AgentOps: Evaluation suites, tracing, cost and latency optimization
+
+### Enable
+- Co-Build Engagements: Build alongside client engineers on a real use case
+- Technical Coaching & Advisory: Architecture reviews, design office hours, code reviews
+- AI Center of Excellence: Standards, reference architectures, and internal adoption
+
+### Corporate Training
+- Agentic AI for Leaders: Half-day executive briefing
+- Building AI Agents: 2–3 day hands-on developer bootcamp
+- Agent Platform Engineering: 2-day workshop for platform, DevOps, and SRE teams
+- Securing AI Agents: 1-day workshop for security and risk teams
+- Working with AI Agents: Workshop for business and operations teams
+- Custom Programs: Tailored curricula delivered on-site or live virtual
 
 ## Pages
 
 - Home: https://odovey.com/
 - About Us: https://odovey.com/about/
 - Services: https://odovey.com/services/
+- Training: https://odovey.com/training/
 - Blog: https://odovey.com/blog/
 - Contact: https://odovey.com/contact/
 

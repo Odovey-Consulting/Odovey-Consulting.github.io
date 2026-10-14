@@ -6,6 +6,7 @@ const SITE_URL = 'https://odovey.com'
 const staticPages = [
   { path: '/', priority: '1.0' },
   { path: '/services/', priority: '0.9' },
+  { path: '/training/', priority: '0.9' },
   { path: '/blog/', priority: '0.8' },
   { path: '/about/', priority: '0.7' },
   { path: '/contact/', priority: '0.7' },

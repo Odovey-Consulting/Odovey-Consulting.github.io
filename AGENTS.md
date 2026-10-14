@@ -4,7 +4,7 @@ This file provides guidance to AI coding agents when working with this repositor
 
 ## Repository Overview
 
-The Odovey Consulting website is a statically generated marketing site built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
+The Odovey Consulting website is a statically generated marketing site for an agentic AI consultancy (build, enable, and train), built with Next.js 16 (App Router), TypeScript, and Tailwind CSS 4. It deploys to GitHub Pages via GitHub Actions. Blog content lives in a separate repository and is fetched at build time.
 
 ## Tech Stack
 
@@ -36,7 +36,8 @@ app/                    Next.js App Router pages
 ├── layout.tsx          Root layout (Header + Footer)
 ├── page.tsx            Home page
 ├── about/              About Us
-├── services/           Services
+├── services/           Services (Advisory, Build, Enable)
+├── training/           Corporate training programs
 ├── contact/            Contact (Typeform embed)
 ├── blog/               Blog listing + [slug] dynamic routes
 ├── not-found.tsx       404 page
@@ -44,9 +45,12 @@ app/                    Next.js App Router pages
 components/             Reusable React components
 ├── Header.tsx          Sticky nav with mobile menu
 ├── Footer.tsx          Site footer
-└── BlogPostGrid.tsx    Blog listing with client-side tag filtering
+├── BlogPostGrid.tsx    Blog listing with client-side tag filtering
+├── ContactPageContent.tsx  Contact page body (Typeform embed + FAQ)
+└── JsonLd.tsx          Structured data helper
 lib/
-└── blog.ts             Blog post fetching and Markdown processing
+├── blog.ts             Blog post fetching and Markdown processing
+└── faqs.ts             Contact FAQ data (shared by page and JSON-LD)
 content/blog/           Blog content (fetched at build, gitignored)
 scripts/
 └── fetch-content.sh    Clones odovey-blog repo into content/blog

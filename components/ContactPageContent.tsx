@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react'
 import { Mail, MapPin } from 'lucide-react'
+import { contactFaqs } from '@/lib/faqs'
 
 export default function ContactPageContent() {
   useEffect(() => {
@@ -32,7 +33,7 @@ export default function ContactPageContent() {
               <span className="text-primary-600 block">Touch</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Ready to transform your business with AI and cloud solutions? Let&apos;s start the conversation.
+              Whether you want to build an agent, stand up an agent platform, or train your team, let&apos;s start the conversation.
             </p>
           </div>
         </div>
@@ -94,33 +95,12 @@ export default function ContactPageContent() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">How long does a typical project take?</h3>
-              <p className="text-gray-600 text-sm">
-                Project timelines vary based on scope and complexity. Cloud migrations typically take 3-6 months, while AI implementations can range from 2-8 months.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">Do you work with small businesses?</h3>
-              <p className="text-gray-600 text-sm">
-                Yes, we work with organizations of all sizes. Our solutions are scalable and can be tailored to fit any budget or requirement.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">What cloud platforms do you support?</h3>
-              <p className="text-gray-600 text-sm">
-                We support all major cloud platforms including AWS, Azure, Google Cloud, and hybrid/multi-cloud environments.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
-              <h3 className="font-semibold text-gray-900 mb-2">What is your engagement model?</h3>
-              <p className="text-gray-600 text-sm">
-                We offer project-based engagements tailored to your specific needs. Each engagement includes a defined scope, timeline, and deliverables agreed upon before work begins.
-              </p>
-            </div>
+            {contactFaqs.map((faq) => (
+              <div key={faq.question} className="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <h3 className="font-semibold text-gray-900 mb-2">{faq.question}</h3>
+                <p className="text-gray-600 text-sm">{faq.answer}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>

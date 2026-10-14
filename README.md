@@ -1,6 +1,6 @@
 # Odovey Consulting Website
 
-Corporate website for [Odovey Consulting](https://odovey.com) — a consultancy specializing in cloud and AI professional services.
+Corporate website for [Odovey Consulting](https://odovey.com) — an agentic AI consultancy offering agent development, platform engineering, team enablement, and corporate training.
 
 ## Tech Stack
 

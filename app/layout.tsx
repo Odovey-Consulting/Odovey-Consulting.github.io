@@ -7,10 +7,10 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://odovey.com'),
   title: {
     template: '%s | Odovey Consulting',
-    default: 'Odovey Consulting - AI & Cloud Professional Services',
+    default: 'Odovey Consulting - Agentic AI Consulting & Training',
   },
-  description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively. Transform your business with our expert cloud and artificial intelligence solutions.',
-  keywords: 'AI consulting, artificial intelligence, cloud services, professional services, cloud migration, digital transformation',
+  description: 'Odovey Consulting is an agentic AI consultancy. We help organizations design and build AI agents and agent platforms, upskill their teams, and deliver corporate training on agentic AI.',
+  keywords: 'agentic AI consulting, AI agents, AI agent development, multi-agent systems, agent platform, AI corporate training, AI upskilling, Model Context Protocol, AI governance',
   authors: [{ name: 'Odovey Consulting' }],
   robots: {
     index: true,
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Odovey Consulting - AI & Cloud Professional Services',
-    description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively.',
+    title: 'Odovey Consulting - Agentic AI Consulting & Training',
+    description: 'Agentic AI consultancy. We build AI agents and agent platforms, enable your engineering teams, and deliver corporate training on agentic AI.',
     url: 'https://odovey.com',
     siteName: 'Odovey Consulting',
     locale: 'en_US',
@@ -35,14 +35,14 @@ export const metadata: Metadata = {
         url: '/images/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'Odovey Consulting - AI & Cloud Professional Services',
+        alt: 'Odovey Consulting - Agentic AI Consulting & Training',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Odovey Consulting - AI & Cloud Professional Services',
-    description: 'Leading consultancy specializing in AI and cloud services, offering professional services exclusively.',
+    title: 'Odovey Consulting - Agentic AI Consulting & Training',
+    description: 'Agentic AI consultancy. We build AI agents and agent platforms, enable your engineering teams, and deliver corporate training on agentic AI.',
     images: ['/images/og-default.png'],
   },
   alternates: {

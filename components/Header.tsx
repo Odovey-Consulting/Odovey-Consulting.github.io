@@ -12,6 +12,7 @@ export function Header() {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Training', href: '/training' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact Us', href: '/contact' },
   ]

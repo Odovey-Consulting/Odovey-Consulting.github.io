@@ -22,7 +22,7 @@ export function Footer() {
         </span>
             </Link>
             <p className="text-gray-300 mb-6 max-w-md">
-              Leading consultancy specializing in AI and cloud services. We help businesses transform and scale with cutting-edge technology solutions.
+              Agentic AI consulting and training. We help organizations build AI agents and agent platforms, and teach their people to run them.
             </p>
             <div className="flex items-center space-x-2 text-gray-300 mb-4">
               <Mail className="h-4 w-4" />
@@ -59,6 +59,11 @@ export function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/training" className="text-gray-300 hover:text-white transition-colors">
+                  Training
+                </Link>
+              </li>
+              <li>
                 <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
                   Blog
                 </Link>
@@ -75,11 +80,11 @@ export function Footer() {
           <div>
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2 text-gray-300">
-              <li>AI Model Infrastructure</li>
-              <li>AI Agent Development</li>
-              <li>RAG Implementation</li>
-              <li>Cloud Migration & Modernization</li>
-              <li>Multi-Cloud Architecture</li>
+              <li>Agentic AI Strategy</li>
+              <li>Custom Agent Development</li>
+              <li>Agent Platform Engineering</li>
+              <li>Team Enablement & Co-Build</li>
+              <li>Corporate Training</li>
             </ul>
           </div>
         </div>
